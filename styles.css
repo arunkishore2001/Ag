@@ -254,16 +254,31 @@ a{
   font-weight: 700;
 }
 
+.open{
+  display: flex;
+}
+
 .spak-para p {
-  width: 40%;
+  padding-right: 100px;
+  
   color: #4e4e4e;
   font-size: 14px;
   font-weight: 400;
 }
 
 .fea-r {
-  margin-right: 300px;
+  margin-right: 00px;
+  margin-top: 50px;
+  padding: 0px;
 }
+
+
+.fea-l{
+  padding-right: 50px;
+}
+
+
+
 
 .left-full-ang {
   margin-top: 80px;
@@ -349,7 +364,7 @@ a{
   font-size: 14px;
   margin-left: -30px;
   font-weight: 400;
-  width: 90%;
+  padding-right: 70px;
 }
 
 .service-para svg {
@@ -363,7 +378,10 @@ a{
 }
 
 .sec-image img {
-  width: 40.7%;
+  width: 90%;
+  
+ 
+  
 }
 
 .image-box {
@@ -375,6 +393,10 @@ a{
   position: absolute;
 }
 
+.image-text-container-two{
+margin-top: -280px;
+}
+
 .image-white-box {
   width: 18%;
   height: 60px;
@@ -383,7 +405,10 @@ a{
   margin-top: -120px;
 }
 
+
+
 .image-white-box p {
+  padding: 0;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -531,8 +556,8 @@ a{
 .slider-rec {
   margin-bottom: -80px;
   margin-left: -600px;
-  width: 858px;
-  height: 89px;
+  width: 50vw;
+  height: 10vh;
   background: #ed5c05;
 }
 
@@ -560,19 +585,34 @@ a{
 
 .slider-text p {
   background: #ed5c05;
-  margin-top: 24px;
+  position: absolute;
   margin-left: 20px;
+  top: 110px;
   width: 62px;
   height: 4px;
 }
+
+
 .slider-text h5 {
   margin-left: 20px;
-  margin-top: 35px;
+  
+ 
+font-family: "OFL Sorts Mill Goudy TT";
+font-size: 24px;
+font-style: italic;
+font-weight: 500;
+line-height: normal;
 }
 
 .slider-text h6 {
   margin-top: 0px;
   margin-left: 20px;
+  margin-top: 20px;
+font-family: Montserrat;
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
 
 @media screen and (max-width: 768px) {
@@ -618,9 +658,9 @@ a{
 
 .slider-rec p {
   position: absolute;
-  margin-top: -130px;
+  margin-top: -160px;
   margin-left: 50px;
-  width: 60%;
+  padding-right: 400px;
 }
 
 .blog-slider__code {
