@@ -31,6 +31,7 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -88,10 +89,13 @@
         <div class="col-md-3 p-0 dev-left">
           <div class="main-box">
             <div class="info">
-                <div class="landing-page-top-content">
-                    <div class="line" style="width: 133px; height: 3px; background: #000"></div>
-                    <p class="line-text">REDEVELOPMENT</p>
-                </div>
+              <div class="landing-page-top-content">
+                <div
+                  class="line"
+                  style="width: 133px; height: 3px; background: #000"
+                ></div>
+                <p class="line-text">REDEVELOPMENT</p>
+              </div>
               <h3>Crafting Ideas To Reality Builds</h3>
             </div>
           </div>
@@ -102,63 +106,66 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="container-fluid experience-section">
       <div class="row">
-        <div class="col exp">
+        <div class="col-md-8 exp">
           <div class="col duo">
-            <div class="experience">
+            <div class="experience2">
               <h2 class="text-center d-flex per justify-content-center py-3">
                 20+
               </h2>
             </div>
             <div class="year">
-              <p class="yr">Year of</p>
-              <p class="ex">EXPERIENCE</p>
+              <p class="experience-sub-heading">Year of</p>
+              <h4 class="experience-heading">EXPERIENCE</h4>
             </div>
           </div>
 
-          <div class="col duo duo1">
+          <div class="col duo ms-md-3">
             <div class="experience2">
               <h2 class="text-center d-flex per justify-content-center py-3">
                 30+
               </h2>
             </div>
-            <div class="year list-inline-item">
-              <p class="yr">Successful</p>
-              <p class="ex">PROJECTS</p>
-            </div>
-            <div class="screen">
-              <img class="" src="images/screen.png" alt="" />
+            <div class="year">
+              <p class="experience-sub-heading">Successful</p>
+              <h4 class="experience-heading">PROJECTS</h4>
             </div>
           </div>
         </div>
+        <div class="col-md-4 d-none d-md-block">
+          <div class="screen">
+            <img class="" src="images/screen.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="str-line my-4"></div>
+
+    <div class="container-fluid benefits-section pt-4">
+      <div class="heading-title">
+        <div class="mount heading-title-icon">
+          <img src="images/icon-park-outline_building-two.png" alt="" />
+        </div>
+        <div class="mount-para heading-title-content">
+          <div class="heading-title-sub">
+            <p class="name-line heading-title-sub-content">We</p>
+            <span class="heading-title-line"></span>
+          </div>
+          <h3 class="heading-title-main-content">Benefits You get</h3>
+        </div>
       </div>
 
-      <div class="row">
-        <div class="col">
-          <div class="str-line my-4"></div>
-
-          <div class="col d-flex">
-            <div class="mount">
-              <img
-                class="ms-5"
-                src="images/icon-park-outline_building-two.png"
-                alt=""
-              />
-            </div>
-            <div class="mount-para px-1">
-              <p class="p-0 m-1 name-line">We</p>
-              <h3 class="pe-4">Benefits You get</h3>
-            </div>
-          </div>
-
-          <div class="row mt-4">
-            <div class="col d-flex comm mt-2 ms-5 fea-l">
-              <div class="speak">
+      <div class="row mt-4">
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-sm-6 d-flex benefits-container">
+              <div class="benefits-icon">
                 <img src="images/speak.png" alt="" />
               </div>
-              <div class="spak-para">
-                <h6 class="">Open Communication</h6>
+              <div class="benefits-content">
+                <h6 class="benefits-content-heading">Open Communication</h6>
                 <p>
                   1Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                   vulputate libero et velit interdum, ashku
@@ -166,12 +173,12 @@
               </div>
             </div>
 
-            <div class="col d-flex comm fea-r">
-              <div class="speak">
+            <div class="col-sm-6 d-flex benefits-container">
+              <div class="benefits-icon">
                 <img src="images/hand.png" alt="" />
               </div>
-              <div class="spak-para">
-                <h6>Client-Centric</h6>
+              <div class="benefits-content">
+                <h6 class="benefits-content-heading">Client-Centric</h6>
                 <p>
                   Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                   vulputate libero et velit interdum, ashku
@@ -179,103 +186,111 @@
               </div>
             </div>
 
-            <div class="row">
-              <div class="col d-flex pt-4 comm fea-l ms-5">
-                <div class="speak">
-                  <img src="images/money.png" alt="" />
-                </div>
-                <div class="spak-para">
-                  <h6>Budget Friendly</h6>
-                  <p>
-                    2Norem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nunc vulputate libero et velit interdum, ashku
-                  </p>
-                </div>
+            <div class="col-sm-6 d-flex mt-md-5 benefits-container">
+              <div class="benefits-icon">
+                <img src="images/money.png" alt="" />
               </div>
-
-              <div class="col d-flex pt-4 comm mt-2 fea-r">
-                <div class="speak">
-                  <img src="images/arrow.png" alt="" />
-                </div>
-                <div class="spak-para">
-                  <h6>Exceed Expectation</h6>
-                  <p>
-                    1Norem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nunc vulputate libero et velit interdum, ashku
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-6 left-full-ang">
-            <div class="left-ang"></div>
-
-            <div class="left-ang-img">
-              <img src="images/archi.png" alt="" />
-            </div>
-          </div>
-
-          <div class="col-6">
-            <div class="col right-ang">
-              <div class="d-flex right-ang-dis">
-                <div class="mount">
-                  <img
-                    class="ms-5"
-                    src="images/icon-park-outline_building-two.png"
-                    alt=""
-                  />
-                </div>
-                <div class="mount-para px-1">
-                  <p class="p-0 m-1 name-line">We</p>
-                  <h3 class="pe-4">Experts</h3>
-                </div>
-              </div>
-              <div class="angle-para ms-5 mt-5">
-                <p class="para-left">
-                  Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                  vulputate libero et velit interdum, ac aliquet odio mattis.
-                </p>
-                <p class="para-sec">
-                  Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                  vulputate libero et velit interdum, ac aliquet odio
-                  mattis.Rorem ipsum dolor sit amet, consectetur adipiscing
-                  elit. Nunc vulputa
+              <div class="benefits-content">
+                <h6 class="benefits-content-heading">Budget Friendly</h6>
+                <p>
+                  2Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  vulputate libero et velit interdum, ashku
                 </p>
               </div>
+            </div>
 
-              <div class="about-us-angle ms-5 mt-5">
-                <button>About Us <img src="images/yellow.png" alt="" /></button>
+            <div class="col-sm-6 d-flex mt-md-5 benefits-container">
+              <div class="benefits-icon">
+                <img src="images/arrow.png" alt="" />
+              </div>
+              <div class="benefits-content">
+                <h6 class="benefits-content-heading">Exceed Expectation</h6>
+                <p>
+                  1Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  vulputate libero et velit interdum, ashku
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="row">
-        <div class="col service d-flex">
-          <div class="col d-flex">
-            <div class="mount">
-              <img
-                class="ms-5"
-                src="images/icon-park-outline_building-two.png"
-                alt=""
-              />
+    <div class="container-fluid experts-section mt-5 pt-xl-5">
+      <div class="row pt-sm-5">
+        <div class="col-sm-5 pb-5 pb-sm-0 left-experts">
+          <div class="left-ang-img">
+            <span class="left-experts-background">
+              <img src="images/archi.png" alt="" />
+            </span>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="col right-ang">
+            <div class="heading-title">
+              <div class="mount heading-title-icon">
+                <img src="images/icon-park-outline_building-two.png" alt="" />
+              </div>
+              <div class="mount-para heading-title-content">
+                <div class="heading-title-sub">
+                  <p class="name-line heading-title-sub-content">We</p>
+                  <span class="heading-title-line"></span>
+                </div>
+                <h3 class="heading-title-main-content">Experts</h3>
+              </div>
             </div>
-            <div class="mount-para px-1">
-              <p class="p-0 m-1 name-line">We</p>
-              <h3 class="pe-4">Services</h3>
+
+            <div class="angle-para mt-4">
+              <p class="para-left">
+                Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                vulputate libero et velit interdum, ac aliquet odio mattis.
+              </p>
+              <p class="para-sec mt-4">
+                Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                vulputate libero et velit interdum, ac aliquet odio mattis.Rorem
+                ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputa
+              </p>
+            </div>
+
+            <div class="common-btn-filled mt-5">
+              <a href="">
+                <p>About Us</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                >
+                  <path d="M15 25.5L22.5 18L15 10.5V25.5Z" fill="#FEBC2F" />
+                </svg>
+              </a>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
 
-          <div class="service-para">
-            <p class="">
-              Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              vulputate libero et velit interdum, ac aliquet odio mattis.Rorem
-              ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputa
-            </p>
+    <div class="container-fluid services-section my-5 pt-5">
+      <div class="row mb-5">
+        <div class="col-sm-6 d-flex">
+          <div class="heading-title">
+            <div class="mount heading-title-icon">
+              <img src="images/icon-park-outline_building-two.png" alt="" />
+            </div>
+            <div class="mount-para heading-title-content">
+              <div class="heading-title-sub">
+                <p class="name-line heading-title-sub-content">Our</p>
+                <span class="heading-title-line"></span>
+              </div>
+              <h3 class="heading-title-main-content">Services</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 mt-sm-0 mt-5">
+          <div class="service-title-content">
             <svg
               width="64%"
               viewBox="0 0 437 325"
@@ -293,65 +308,86 @@
                 stroke-width="3"
               />
             </svg>
+            <p>
+              Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              vulputate libero et velit interdum, ac aliquet odio mattis.Rorem
+              ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputa
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row service-grid">
+        <div class="service-container col-sm-6 col-md-4">
+          <img class="image1" src="images/service2.png" alt="" />
+          <div class="image-box"></div>
+          <div
+            class="image-white-box d-flex justify-content-center align-items-center"
+          >
+            <h6>COMMERCIAL</h6>
           </div>
         </div>
 
-        <div class="row service-img ms-5">
-          <div class="row service-row ms-5">
-            <div class="fir-image d-flex">
-              <div class="image-text">
-                <img class="image1" src="images/service2.png" alt="" />
-                <div class="image-box"></div>
-                <div
-                  class="image-white-box d-flex justify-content-center align-items-center"
-                >
-                  <p class="mt-3">COMMERCIAL</p>
-                </div>
-              </div>
+        <div class="service-container col-sm-6 col-md-4">
+          <img class="image1" src="images/service2.png" alt="" />
+          <div class="image-box"></div>
+          <div
+            class="image-white-box d-flex justify-content-center align-items-center"
+          >
+            <h6>COMMERCIAL</h6>
+          </div>
+        </div>
 
-              <div class="image-text">
-                <img class="image1" src="images/service2.png" alt="" />
-                <div class="image-box"></div>
-                <div
-                  class="image-white-box d-flex justify-content-center align-items-center"
-                >
-                  <p class="mt-3">COMMERCIAL</p>
-                </div>
-              </div>
+        <div class="service-container col-sm-6 col-md-4">
+          <img class="image1" src="images/service2.png" alt="" />
+          <div class="image-box"></div>
+          <div
+            class="image-white-box d-flex justify-content-center align-items-center"
+          >
+            <h6>COMMERCIAL</h6>
+          </div>
+        </div>
 
-              <div class="image-text">
-                <img class="image1" src="images/service2.png" alt="" />
-                <div class="image-box"></div>
-                <div
-                  class="image-white-box d-flex justify-content-center align-items-center"
-                >
-                  <p class="mt-3">COMMERCIAL</p>
-                </div>
-              </div>
+        <div class="service-container col-sm-6 col-md-6">
+          <img class="image1" src="images/service2.png" alt="" />
+          <div class="image-box"></div>
+          <div
+            class="image-white-box d-flex justify-content-center align-items-center"
+          >
+            <h6>COMMERCIAL</h6>
+          </div>
+        </div>
+
+        <div class="service-container col-md-6">
+          <img class="image1" src="images/service2.png" alt="" />
+          <div class="image-box"></div>
+          <div
+            class="image-white-box d-flex justify-content-center align-items-center"
+          >
+            <h6>COMMERCIAL</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid services-section mt-5 pt-5">
+      <div class="row">
+        <div class="col-12">
+          <div class="heading-title">
+            <div class="mount heading-title-icon">
+              <img src="images/icon-park-outline_building-two.png" alt="" />
             </div>
-
-            <div class="sec-image mt-1">
-              <img class="image4" src="images/service1.png" alt="" />
-              <img class="image4" src="images/service1.png" alt="" />
+            <div class="mount-para heading-title-content">
+              <div class="heading-title-sub">
+                <p class="name-line heading-title-sub-content">Our Great</p>
+                <span class="heading-title-line"></span>
+              </div>
+              <h3 class="heading-title-main-content">Successful Projects</h3>
             </div>
           </div>
         </div>
 
-        <div class="row">
-          <div class="col success d-flex">
-            <div class="mount">
-              <img
-                class="ms-5"
-                src="images/icon-park-outline_building-two.png"
-                alt=""
-              />
-            </div>
-            <div class="mount-para pb-4">
-              <p class="p-0 ms-2 success-name name-line">Our Great</p>
-              <h3 class="pe-4 ms-2">Successfull Projects</h3>
-            </div>
-          </div>
-
+        <!-- <div class="col-12 mt-4">
           <div class="blog-slider">
             <div class="blog-slider__wrp swiper-wrapper">
               <div class="blog-slider__item swiper-slide">
@@ -456,30 +492,174 @@
             </div>
             <div class="blog-slider__pagination"></div>
           </div>
-
-          <script
-            type="text/javascript"
-            src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"
-          ></script>
-          <script type="text/javascript" src="script.js"></script>
-
-          <script>
-            var swiper = new Swiper(".blog-slider", {
-              spaceBetween: 30,
-              effect: "fade",
-              loop: true,
-              mousewheel: {
-                invert: false,
-              },
-              // autoHeight: true,
-              pagination: {
-                el: ".blog-slider__pagination",
-                clickable: true,
-              },
-            });
-          </script>
-        </div>
+        </div> -->
       </div>
     </div>
+
+    <div class="container-fluid mt-4 mb-5">
+      <div class="row">
+        <div class="col-md-8 mt-2 mb-4">
+          <p>
+            1Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            vulputate libero et velit interdum, ac aliquet odio mattis. Class
+            aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            inceptos himenaeos.
+          </p>
+        </div>
+      </div>
+      <div id="testimonialCarousel" class="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item acive">
+            <div class="card shadow-sm rounded-3">
+              <div class="testimonial-container">
+                <img src="images/sliderimg1.png" />
+                <div class="testimonial-content">
+                  <h5 class="testimonial-content-heading">Kasa Grand</h5>
+                  <p>No: 110, West Mambalam, Chennai - 600043</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card shadow-sm rounded-3">
+              <div class="testimonial-container">
+                <img src="images/sliderimg1.png" />
+                <div class="testimonial-content">
+                  <h5 class="testimonial-content-heading">Kasa Grand</h5>
+                  <p>No: 110, West Mambalam, Chennai - 600043</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card shadow-sm rounded-3">
+              <div class="testimonial-container">
+                <img src="images/sliderimg1.png" />
+                <div class="testimonial-content">
+                  <h5 class="testimonial-content-heading">Kasa Grand</h5>
+                  <p>No: 110, West Mambalam, Chennai - 600043</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card shadow-sm rounded-3">
+              <div class="testimonial-container">
+                <img src="images/sliderimg1.png" />
+                <div class="testimonial-content">
+                  <h5 class="testimonial-content-heading">Kasa Grand</h5>
+                  <p>No: 110, West Mambalam, Chennai - 600043</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card shadow-sm rounded-3">
+              <div class="testimonial-container">
+                <img src="images/sliderimg1.png" />
+                <div class="testimonial-content">
+                  <h5 class="testimonial-content-heading">Kasa Grand</h5>
+                  <p>No: 110, West Mambalam, Chennai - 600043</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card shadow-sm rounded-3">
+              <div class="testimonial-container">
+                <img src="images/sliderimg1.png" />
+                <div class="testimonial-content">
+                  <h5 class="testimonial-content-heading">Kasa Grand</h5>
+                  <p>No: 110, West Mambalam, Chennai - 600043</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card shadow-sm rounded-3">
+              <div class="testimonial-container">
+                <img src="images/sliderimg1.png" />
+                <div class="testimonial-content">
+                  <h5 class="testimonial-content-heading">Kasa Grand</h5>
+                  <p>No: 110, West Mambalam, Chennai - 600043</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#testimonialCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#testimonialCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <script>
+      const multipleItemCarousel = document.querySelector(
+        "#testimonialCarousel"
+      );
+
+      if (window.matchMedia("(min-width:100px)").matches) {
+        const carousel = new bootstrap.Carousel(multipleItemCarousel, {
+          interval: false,
+        });
+
+        var carouselWidth = $(".carousel-inner")[0].scrollWidth;
+        var cardWidth = $(".carousel-item").width();
+
+        var scrollPosition = 0;
+
+        $(".carousel-control-next").on("click", function () {
+          if (scrollPosition < carouselWidth - cardWidth * 3) {
+            scrollPosition = scrollPosition + cardWidth;
+            $(".carousel-inner").animate({ scrollLeft: scrollPosition }, 800);
+          }
+        });
+        $(".carousel-control-prev").on("click", function () {
+          if (scrollPosition > 0) {
+            scrollPosition = scrollPosition - cardWidth;
+            $(".carousel-inner").animate({ scrollLeft: scrollPosition }, 800);
+          }
+        });
+      } else {
+        $(multipleItemCarousel).addClass("slide");
+      }
+    </script>
+
+    <!-- <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"
+    ></script>
+    <script type="text/javascript" src="script.js"></script>
+
+    <script>
+      var swiper = new Swiper(".blog-slider", {
+        spaceBetween: 30,
+        effect: "fade",
+        loop: true,
+        mousewheel: {
+          invert: false,
+        },
+        // autoHeight: true,
+        pagination: {
+          el: ".blog-slider__pagination",
+          clickable: true,
+        },
+      });
+    </script> -->
   </body>
 </html>
