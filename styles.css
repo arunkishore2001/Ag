@@ -321,6 +321,7 @@ a {
 
 .para-sec {
   color: #4e4e4e;
+  text-align: justify;
 }
 
 /* services section  */
@@ -841,10 +842,8 @@ a {
 
 .connect-img {
   overflow: hidden;
-  
 }
 .connect {
-  
 }
 
 .connect-form form {
@@ -882,7 +881,6 @@ a {
   margin-top: auto;
 }
 .connect-info {
-  
 }
 .connect-info img {
   position: absolute;
@@ -903,7 +901,6 @@ a {
 }
 
 .contact-detail {
-
   margin-right: 90px;
 }
 .ag-circle-bg svg {
@@ -916,7 +913,6 @@ a {
   flex-direction: column;
   align-items: center;
   gap: 240px;
-  
 }
 
 .contact-right p {
@@ -924,20 +920,17 @@ a {
   padding-left: 100px;
 }
 
-.detail-item img{
-  
+.detail-item img {
   margin-left: 400px;
- 
 }
 
 .contact-detail {
- display: flex;
- flex-direction: column;
- justify-content: flex-end;
- 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
-.footer-img{
+.footer-img {
   height: 200px;
 }
 
@@ -952,7 +945,6 @@ a {
 }
 
 .footer-heading {
-  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -971,17 +963,15 @@ a {
 
 .footer-heading p {
   color: #000;
-  
+
   font-style: normal;
   font-weight: 600;
- 
 }
 
 .connect-now-right {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 .footer-container {
@@ -997,7 +987,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 .dot-image {
   position: absolute;
@@ -1013,13 +1002,12 @@ a {
 }
 
 .creations-list {
-  
 }
 .creations-list p {
   color: #000;
 
   font-family: Montserrat;
- padding-right: 30px;
+  padding-right: 30px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -1029,7 +1017,7 @@ a {
   color: #000;
   padding: 10px;
   font-family: Montserrat;
-  
+
   font-style: normal;
   font-weight: 500;
   line-height: 2.5;
@@ -1053,24 +1041,337 @@ a {
   display: flex;
   justify-content: space-between;
   gap: 80px;
-
-
-
 }
 
 .rights {
   background: #272d63;
   width: 100%;
   height: 10vh;
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
 
- 
-  
-
   font-weight: 400;
+}
+
+
+
+
+
+/* About page */
+
+.first-bg-color{
+  padding: 0;
+  margin-top: 80px;
+  background: #272D63;
+  width: 100%;
+max-height: 550px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+  
+}
+
+.partner-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.part img{
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
  
 }
+
+.first-bg-color img{
+
+
+
+}
+.about-bg{
+  margin-top: -250px;
+  
+}
+
+.about-heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+}
+
+.about-heading h1{
+
+  font-weight: 600;
+
+}
+.about-sub {
+    display: flex;
+   margin-left: 160px;
+  
+    
+    
+}
+.about-sub h6{
+  padding-left: 40px;
+  
+}
+
+.about-sub p{
+  background: #ED5C05;
+  width: 95px;
+height: 2px;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding-left: 20px;
+}
+
+.about-home img{
+  overflow: hidden;
+  object-fit: cover;
+  width: 70%;
+  height: 500px;
+}
+
+.about-home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+
+.first-bg-color h1{
+
+  color: rgba(255, 255, 255, 0.20);
+font-weight: 300;
+padding-top: 220px;
+
+}
+
+.about-story img{
+  overflow: hidden;
+}
+
+.story{
+  overflow: hidden;
+}
+
+
+.mission-bg{
+  background: linear-gradient(180deg, rgba(255, 199, 165, 0.10) 0%, rgba(237, 92, 5, 0.10) 100%);
+  width: 100%;
+height: 431px;
+
+
+}
+
+
+.mission{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 90px;
+  object-fit: cover;
+
+}
+
+.mission1-img{
+  margin-top: 60px;
+  
+  
+  object-fit: cover;
+}
+
+.mission2-img{
+  margin-top: -50px;
+  object-fit: cover;
+}
+
+.mission-title h1{
+  position: absolute;
+  color: rgba(237, 92, 5, 0.08);
+
+text-align: justify;
+
+font-size: 12vw;
+font-style: normal;
+font-weight: 700;
+line-height: 200%; 
+}
+
+.about-main-content{
+  background: linear-gradient(270deg, #ED5C05 0%, #272D63 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.about-mission-title{
+  margin-top: 60px;
+  margin-left: 80px;
+}
+
+.mission-para{
+  display: flex;
+  
+  align-items: center;
+}
+
+.mission-para p{
+  color: #4E4E4E;
+text-align: justify;
+font-family: Poppins;
+
+font-style: normal;
+font-weight: 400;
+line-height: 200%; /* 32px */
+
+margin-left: 80px;
+}
+
+
+
+
+.vission-bg{
+  background: linear-gradient(180deg, rgba(39, 45, 99, 0.10) 0%, rgba(193, 199, 255, 0.10) 100%);
+}
+
+.vission-title h1{
+  color: rgba(39, 45, 99, 0.08);
+  padding-left: 180px;
+  padding-top: 50px;
+
+}
+
+
+.vission-img{
+  object-fit: cover;
+}
+
+
+.process-main{
+  width: 100%;
+  height: 431px;
+  background-color: #c6cae1;
+}
+.process{
+  
+}
+.process-sec{
+  
+  margin-left: 140px;
+  margin-top: 40px;
+ display: ;
+  
+  
+}
+
+.process-sec p{
+  max-width: 280px;
+  text-align: justify;
+  padding-top: 10px;
+
+  color: #4E4E4E;
+font-family: Poppins;
+
+font-weight: 400;
+line-height: 150%; 
+  
+  
+}
+
+.process-sec h6{
+  padding-top: 20px;
+  color: #000;
+
+
+font-weight: 600;
+
+  
+}
+
+.process-sec img{
+ width: 5%;
+  background: rgba(79, 91, 201, 0.10);
+}
+
+.process-sec h1{
+  position: absolute;
+  color: rgba(0, 0, 0, 0.10);
+
+font-size: 8vw;
+
+font-weight: 700;
+padding-left: 220px;
+margin-top: -60px;
+
+}
+
+.process-right{
+  margin-top: 160px;
+}
+
+.meet-heading{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.meet-heading h1{
+
+font-weight: 700;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+.meet-heading p{
+  max-width: 700px;
+  text-align: center;
+
+  color: #4E4E4E;
+
+
+font-family: Poppins;
+
+
+font-weight: 400;
+line-height: 200%;
+}
+
+.meet-team{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 40px;
+  flex-wrap: wrap;
+  
+}
+
+.meet-bg{
+  margin-top: -180px;
+  background: rgba(79, 91, 201, 0.28);
+  width: 100%;
+height: 40%;
+position: absolute;
+z-index: -1;
+}
+
+.meet-member h6{
+  
+
+color: #000;
+font-weight: 600;
+line-height: 200%; 
+}
+
+
+
+.meet-member p{
+  color: #000;
+font-weight: 400;
+line-height: 200%; 
+  }
