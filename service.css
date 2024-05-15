@@ -28,11 +28,15 @@ line-height: 200%;
 
 .serive-img{
     padding-top: 40px;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
     
 }
 .serive-img img{
     object-fit: cover;
     overflow: hidden;
+    
 }
 
 
