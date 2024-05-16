@@ -36,56 +36,85 @@
     <link rel="stylesheet" href="contact.css">
 </head>
 <body>
-    <div class="nav-container sticky-top">
-        <div class="container-fluid top-nav-bar">
-          <div class="row navigation">
-            <div
-              class="col-12 d-flex flex-row align-items-center justify-content-between"
-            >
-              <div class="logo-container div-center">
-                <a href="index.html">
-                  <img class="nav-logo" src="images/logo.png" alt="" />
-                </a>
-              </div>
-  
-              <div class="nav-control">
-                <ul class="text-decoration-none p-0 m-0 div-center">
-                  <li>
-                    <a href="index.html">Home <span class="nav-hover-line"></span></a>
-                  </li>
-                  <li>
-                    <a href="about.html">About <span class="nav-hover-line"></span></a>
-                  </li>
-                  <li>
-                    <a href="service.html">Service <span class="nav-hover-line"></span></a>
-                  </li>
-                  <li>
-                    <a href="project.html">Project <span class="nav-hover-line"></span></a>
-                  </li>
-                  <li>
-                    <a href="contact.html">Contact <span class="nav-hover-line"></span></a>
-                  </li>
-                </ul>
-              </div>
-  
-              <div class="common-btn-filled">
-                <a href="">
-                  <p>Contact Us</p>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="36"
-                    height="36"
-                    viewBox="0 0 36 36"
-                    fill="none"
-                  >
-                    <path d="M15 25.5L22.5 18L15 10.5V25.5Z" fill="#FEBC2F" />
-                  </svg>
-                </a>
-              </div>
-            </div>
+  <div class="nav-container sticky-top">
+    <div class="container-fluid top-nav-bar">
+      <div class="row navigation">
+        <div
+          class="col-12 d-flex flex-row align-items-center justify-content-between"
+        >
+          <div class="logo-container div-center">
+            <a href="index.html">
+              <img class="nav-logo" src="images/logo.png" alt="" />
+            </a>
+          </div>
+
+          <div class="nav-control">
+
+            <ul class="sidebar text-decoration-none p-0 m-0 div-center">
+              <li onclick="closeSidebar()">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="64px" viewBox="0 -960 960 960" width="34px" fill="#75FBFD"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+              </li>
+              <li>
+                <a href="index.html" >Home <span class="nav-hover-line"></span></a>
+              </li>
+              <li>
+                <a href="about.html">About <span class="nav-hover-line"></span></a>
+              </li>
+              <li>
+                <a href="service.html">Service <span class="nav-hover-line"></span></a>
+              </li>
+              <li>
+                <a href="project.html">Project <span class="nav-hover-line"></span></a>
+              </li>
+              <li>
+                <a href="contact.html">Contact <span class="nav-hover-line"></span></a>
+              </li>
+            </ul>
+
+            <ul class="main-nav text-decoration-none p-0 m-0 div-center">
+              
+             
+
+              <li class="hidenav">
+                <a href="index.html" >Home <span class="nav-hover-line"></span></a>
+              </li>
+              <li class="hidenav">
+                <a href="about.html">About <span class="nav-hover-line"></span></a>
+              </li>
+              <li class="hidenav">
+                <a href="service.html">Service <span class="nav-hover-line"></span></a>
+              </li>
+              <li class="hidenav">
+                <a href="project.html">Project <span class="nav-hover-line"></span></a>
+              </li>
+              <li class="hidenav">
+                <a href="contact.html">Contact <span class="nav-hover-line"></span></a>
+              </li>
+
+              <li class="menu-btn" onclick="showSidebar()">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#75FBFD"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class=" contact-hide common-btn-filled">
+            <a href="">
+              <p>Contact Us</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="36"
+                height="36"
+                viewBox="0 0 36 36"
+                fill="none"
+              >
+                <path d="M15 25.5L22.5 18L15 10.5V25.5Z" fill="#FEBC2F" />
+              </svg>
+            </a>
           </div>
         </div>
       </div>
+    </div>
+  </div>
 
 
       <div class="container-fluid container-fluid-max about-landing">
@@ -268,7 +297,7 @@ Write Your Message..</textarea
 
 
 
-
+    <script src="index.js" ></script>
     
 </body>
 </html>

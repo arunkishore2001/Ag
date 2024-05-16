@@ -33,6 +33,7 @@
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   </head>
   <body>
     <div class="nav-container sticky-top">
@@ -43,14 +44,18 @@
           >
             <div class="logo-container div-center">
               <a href="index.html">
-              <img class="nav-logo" src="images/logo.png" alt="" />
-            </a>
+                <img class="nav-logo" src="images/logo.png" alt="" />
+              </a>
             </div>
 
             <div class="nav-control">
-              <ul class="text-decoration-none p-0 m-0 div-center">
+
+              <ul class="sidebar text-decoration-none p-0 m-0 div-center">
+                <li onclick="closeSidebar()">
+                  <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="64px" viewBox="0 -960 960 960" width="34px" fill="#75FBFD"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+                </li>
                 <li>
-                  <a href="#">Home <span class="nav-hover-line"></span></a>
+                  <a href="index.html" >Home <span class="nav-hover-line"></span></a>
                 </li>
                 <li>
                   <a href="about.html">About <span class="nav-hover-line"></span></a>
@@ -65,9 +70,34 @@
                   <a href="contact.html">Contact <span class="nav-hover-line"></span></a>
                 </li>
               </ul>
+
+              <ul class="main-nav text-decoration-none p-0 m-0 div-center">
+                
+               
+
+                <li class="hidenav">
+                  <a href="index.html" >Home <span class="nav-hover-line"></span></a>
+                </li>
+                <li class="hidenav">
+                  <a href="about.html">About <span class="nav-hover-line"></span></a>
+                </li>
+                <li class="hidenav">
+                  <a href="service.html">Service <span class="nav-hover-line"></span></a>
+                </li>
+                <li class="hidenav">
+                  <a href="project.html">Project <span class="nav-hover-line"></span></a>
+                </li>
+                <li class="hidenav">
+                  <a href="contact.html">Contact <span class="nav-hover-line"></span></a>
+                </li>
+
+                <li class="menu-btn" onclick="showSidebar()">
+                  <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#75FBFD"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+                </li>
+              </ul>
             </div>
 
-            <div class="common-btn-filled">
+            <div class=" contact-hide common-btn-filled">
               <a href="">
                 <p>Contact Us</p>
                 <svg
@@ -881,10 +911,17 @@ Write Your Message..</textarea
           }
         }, 150);
       });
+
+
+
+
+
+
+ 
     </script>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+    <script src="index.js" ></script>
     <!-- <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"
