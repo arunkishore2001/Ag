@@ -53,3 +53,29 @@
 .project-big-rec {
   width: 100%;
 }
+
+
+.sucess-pro{
+  padding: 60px;
+}
+
+.sucess-meet{
+  padding: 20px;
+}
+
+.sucess-meet .row{
+  padding: 10px;
+}
+
+.sucess-meet .row .col-md-6{
+  padding: 20px;
+}
+
+
+
+
+
+
+.gallery-title{
+  padding-bottom: 40px;
+}
