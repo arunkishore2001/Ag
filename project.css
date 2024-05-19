@@ -70,3 +70,17 @@
 .gallery-title {
   padding-bottom: 40px;
 }
+
+
+@media (max-width: 576px) {
+  .sucess-meet .row .col-md-6{
+    padding: 0;
+    padding-top: 20px;
+  }
+
+  .testimonial-container img{
+    padding-left: 0;
+  }
+
+ 
+}

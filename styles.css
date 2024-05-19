@@ -295,6 +295,7 @@ a {
 
 .left-experts {
   position: relative;
+  padding-top: 40px;
 }
 
 .left-ang-img {
@@ -1171,7 +1172,7 @@ a {
     rgba(237, 92, 5, 0.1) 100%
   );
   width: 100%;
-  height: 431px;
+  padding-bottom: 40px;
 }
 
 .mission {
@@ -1181,15 +1182,30 @@ a {
   object-fit: cover;
 }
 
+.mission1-img img{
+  width: 100%;
+
+}
+
+.mission2-img img{
+  width: 100%;
+  
+}
+
+.meet-member{
+  padding-bottom: 30px;
+}
+
 .mission1-img {
   margin-top: 60px;
-
+  
   object-fit: cover;
 }
 
 .mission2-img {
   margin-top: -50px;
   object-fit: cover;
+ 
 }
 
 .mission-title h1 {
@@ -1312,6 +1328,7 @@ a {
   font-weight: 700;
   padding-top: 20px;
   padding-bottom: 20px;
+  text-align: center;
 }
 .meet-heading p {
   max-width: 700px;
@@ -1405,6 +1422,25 @@ a {
 }
 
 @media screen and (max-width: 576px) {
+
+  .about-mission-title{
+    margin-left: 0px;
+   
+  }
+
+  .mission-para p{
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  .process-sec{
+    margin-left: 40px;
+  }
+
+  .mission2-img img{
+    padding: 10px;
+  }
+
   .first-bg-color{
     margin-top: 0;
     justify-content: center;
