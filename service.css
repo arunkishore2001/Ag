@@ -1,5 +1,5 @@
 .contact-landing-para {
-  max-width: 650px;
+  max-width: 800px;
 }
 
 .contact-landing-page {
@@ -53,13 +53,24 @@
 .service-left-side-content .serve-rec{
     margin-left: 0px;
     margin-right: -150px;
-    z-index: 1;
 }
 
 .serve-right-container {
   display: flex;
   justify-content: center; /* Centering content horizontally if needed */
   align-items: center;
+}
+
+.service-bg-dots img{
+  position: absolute;
+  top: -15%;
+  right: -12%;
+  z-index: -1;
+}
+
+.service-bg-dots-left img{
+  left: -12%;
+  right: unset;
 }
 
 @media (max-width: 767px) {

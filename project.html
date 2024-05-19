@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,414 +33,398 @@
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="project.css">
-    <link rel="stylesheet" href="project-slides.css">
-    
+    <link rel="stylesheet" href="project.css" />
+    <link rel="stylesheet" href="project-slides.css" />
+
     <link rel="stylesheet" href="navBar.css" />
-</head>
-<body>
-  
-  <div class="nav-container sticky-top">
-    <div class="container-fluid top-nav-bar">
-      <div class="row navigation">
-        <div
-          class="col-12 d-flex flex-row align-items-center justify-content-between"
-        >
-          <div class="logo-container div-center">
-            <a href="index.html">
-              <img class="nav-logo" src="images/logo.png" alt="" />
-            </a>
-          </div>
+  </head>
+  <body>
+    <div class="nav-container sticky-top">
+      <div class="container-fluid top-nav-bar">
+        <div class="row navigation">
+          <div
+            class="col-12 d-flex flex-row align-items-center justify-content-between"
+          >
+            <div class="logo-container div-center">
+              <a href="index.html">
+                <img class="nav-logo" src="images/logo.png" alt="" />
+              </a>
+            </div>
 
-          <div class="nav-control d-none d-md-block">
-            <ul class="main-nav text-decoration-none p-0 m-0 div-center">
-              <li class="hidenav">
-                <a href="index.html"
-                  >Home <span class="nav-hover-line"></span
-                ></a>
-              </li>
-              <li class="hidenav">
-                <a href="about.html"
-                  >About <span class="nav-hover-line"></span
-                ></a>
-              </li>
-              <li class="hidenav">
-                <a href="service.html"
-                  >Service <span class="nav-hover-line"></span
-                ></a>
-              </li>
-              <li class="hidenav active">
-                <a href="project.html"
-                  >Project <span class="nav-hover-line"></span
-                ></a>
-              </li>
-              <li class="hidenav">
-                <a href="contact.html"
-                  >Contact <span class="nav-hover-line"></span
-                ></a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="contact-hide common-btn-filled d-none d-md-block">
-            <a href="">
-              <p>Contact Us</p>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="36"
-                height="36"
-                viewBox="0 0 36 36"
-                fill="none"
-              >
-                <path d="M15 25.5L22.5 18L15 10.5V25.5Z" fill="#FEBC2F" />
-              </svg>
-            </a>
-          </div>
-
-          <div class="mobile-nav d-md-none">
-            <input
-              type="checkbox"
-              id="main-navigation-toggle"
-              class="btn btn--close"
-              title="Toggle main navigation"
-            />
-            <label for="main-navigation-toggle">
-              <span></span>
-            </label>
-
-            <nav id="main-navigation" class="nav-main">
-              <ul class="menu">
-                <li class="menu__item">
-                  <a class="menu__link" href="/index.html">Home</a>
+            <div class="nav-control d-none d-md-block">
+              <ul class="main-nav text-decoration-none p-0 m-0 div-center">
+                <li class="hidenav">
+                  <a href="index.html"
+                    >Home <span class="nav-hover-line"></span
+                  ></a>
                 </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="/about.html">About</a>
+                <li class="hidenav">
+                  <a href="about.html"
+                    >About <span class="nav-hover-line"></span
+                  ></a>
                 </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="/service.html">Services</a>
+                <li class="hidenav">
+                  <a href="service.html"
+                    >Service <span class="nav-hover-line"></span
+                  ></a>
                 </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="/project.html">Projects</a>
+                <li class="hidenav active">
+                  <a href="project.html"
+                    >Project <span class="nav-hover-line"></span
+                  ></a>
                 </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="/contact.html">Contact</a>
+                <li class="hidenav">
+                  <a href="contact.html"
+                    >Contact <span class="nav-hover-line"></span
+                  ></a>
                 </li>
               </ul>
-            </nav>
+            </div>
+
+            <div class="contact-hide common-btn-filled d-none d-md-block">
+              <a href="">
+                <p>Contact Us</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                >
+                  <path d="M15 25.5L22.5 18L15 10.5V25.5Z" fill="#FEBC2F" />
+                </svg>
+              </a>
+            </div>
+
+            <div class="mobile-nav d-md-none">
+              <input
+                type="checkbox"
+                id="main-navigation-toggle"
+                class="btn btn--close"
+                title="Toggle main navigation"
+              />
+              <label for="main-navigation-toggle">
+                <span></span>
+              </label>
+
+              <nav id="main-navigation" class="nav-main">
+                <ul class="menu">
+                  <li class="menu__item">
+                    <a class="menu__link" href="/index.html">Home</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="/about.html">About</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="/service.html">Services</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="/project.html">Projects</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="/contact.html">Contact</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
+    <div class="container-fluid container-fluid-max about-landing">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="about-heading">
+            <h1>PROJECTS THAT TELLS ABOUT US</h1>
+          </div>
 
-       <div class="container-fluid container-fluid-max about-landing">
-        <div class="row">
-            <div class="col-md-12">
+          <div class="about-sub container-fluid">
+            <h6>Home</h6>
+            <p></p>
+            <h6>About Us</h6>
+            <p></p>
+          </div>
+          <div class="about-home">
+            <img src="images/home.png" alt="" />
+          </div>
 
-                <div class="about-heading">
-                    <h1>PROJECTS THAT TELLS ABOUT US</h1>
-                </div>
+          <div class="about-bg">
+            <div class="first-bg-color m-0 p-0">
+              <div class="row container-fluid">
+                <h1 class="text-center">OUR PROJECTS</h1>
 
-                <div class="about-sub container-fluid">
-                    <h6>Home</h6>
-                    <p></p>
-                    <h6>About Us</h6>
-                    <p></p>
-                </div>
-                <div class="about-home">
-                    <img src="images/home.png" alt="">
-                </div>
-                
-                <div class="about-bg">
-                    <div class="first-bg-color m-0 p-0">
-                      <div class="row container-fluid">
-                        <h1 class="text-center">OUR PROJECTS</h1>
-                        
-                      <div class="col-md-6">
-
-                       
-                       
-                        <div class="contact-landing-img">
-                            <img src="images/ag-contact.png" alt="">
-                        </div>
-
-                      </div>
-
-
-                      <div class="col-md-6">
-                        <div class="contact-landing-para">
-                            <p>AG Creations is a dynamic and innovative construction company, established in the year 2022, to redefine the landscape of the construction industry. With a forward-thinking approach, we specialize in delivering high-quality construction projects that meet the evolving needs of our clien</p>
-                        </div>
-
-                      </div>
-                      
-                      
-                        
-                    </div>
+                <div class="col-md-6">
+                  <div class="contact-landing-img">
+                    <img src="images/ag-contact.png" alt="" />
                   </div>
                 </div>
-                
-               
 
+                <div class="col-md-6">
+                  <div class="contact-landing-para">
+                    <p>
+                      AG Creations is a dynamic and innovative construction
+                      company, established in the year 2022, to redefine the
+                      landscape of the construction industry. With a
+                      forward-thinking approach, we specialize in delivering
+                      high-quality construction projects that meet the evolving
+                      needs of our clien
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-  </div>
-
-
-
-  <div class="container-fluid">
-    <div class="sucess-pro">
-    <div class="heading-title ">
-      <div class="mount heading-title-icon">
-        <img src="images/icon-park-outline_building-two.png" alt="" />
-      </div>
-      <div class="mount-para heading-title-content">
-        <div class="heading-title-sub">
-          <p class="name-line heading-title-sub-content">Our Work</p>
-          <span class="heading-title-line"></span>
-        </div>
-        <h3 class="heading-title-main-content">Portfolio</h3>
       </div>
     </div>
 
-
-
-    <div class="sucess-meet">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="card shadow-sm rounded-3">
-            <div class="testimonial-container">
-              <img src="images/sliderimg1.png" />
-              <div class="testimonial-content">
-                <h5 class="testimonial-content-heading">Kasa Grand</h5>
-                <p>No: 110, West Mambalam, Chennai - 600043</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="col-md-6">
-
-          <div class="card shadow-sm rounded-3">
-            <div class="testimonial-container">
-              <img src="images/sliderimg1.png" />
-              <div class="testimonial-content">
-                <h5 class="testimonial-content-heading">Kasa Grand</h5>
-                <p>No: 110, West Mambalam, Chennai - 600043</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-
-      <div class="row">
-        <div class="col-md-6">
-          <div class="card shadow-sm rounded-3">
-            <div class="testimonial-container">
-              <img src="images/sliderimg1.png" />
-              <div class="testimonial-content">
-                <h5 class="testimonial-content-heading">Kasa Grand</h5>
-                <p>No: 110, West Mambalam, Chennai - 600043</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="col-md-6">
-
-          <div class="card shadow-sm rounded-3">
-            <div class="testimonial-container">
-              <img src="images/sliderimg1.png" />
-              <div class="testimonial-content">
-                <h5 class="testimonial-content-heading">Kasa Grand</h5>
-                <p>No: 110, West Mambalam, Chennai - 600043</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-6">
-          <div class="card shadow-sm rounded-3">
-            <div class="testimonial-container">
-              <img src="images/sliderimg1.png" />
-              <div class="testimonial-content">
-                <h5 class="testimonial-content-heading">Kasa Grand</h5>
-                <p>No: 110, West Mambalam, Chennai - 600043</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="col-md-6">
-
-          <div class="card shadow-sm rounded-3">
-            <div class="testimonial-container">
-              <img src="images/sliderimg1.png" />
-              <div class="testimonial-content">
-                <h5 class="testimonial-content-heading">Kasa Grand</h5>
-                <p>No: 110, West Mambalam, Chennai - 600043</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-
-
-  </div>
-
-
-
-
-  <div class="container-fluid ">
-<div class="gallery">
-
-    <div class="gallery-title">
-    <div class="heading-title ">
-      <div class="mount heading-title-icon">
-        <img src="images/icon-park-outline_building-two.png" alt="" />
-      </div>
-      <div class="mount-para heading-title-content">
-        <div class="heading-title-sub">
-          <p class="name-line heading-title-sub-content">Our Work</p>
-          <span class="heading-title-line"></span>
-        </div>
-        <h3 class="heading-title-main-content">Portfolio</h3>
-      </div>
-    </div>
-  </div>
-
-    <div class="row gallery-row">
-      <div class="column">
-        <img src="images/pro1.png" onclick="openModal(this.src)">
-        <img src="images/pro2.png" onclick="openModal(this.src)">
-        <img src="images/pro3.png" onclick="openModal(this.src)">
-      </div>
-      <div class="column">
-        <img src="images/pro4.png" onclick="openModal(this.src)">
-        <img src="images/pro5.png" onclick="openModal(this.src)">
-        <img src="images/pro6.png" onclick="openModal(this.src)">
-        <img src="https://images.pexels.com/photos/2019546/pexels-photo-2019546.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" onclick="openModal(this.src)">
-      </div>
-      <div class="column">
-        <img src="https://images.pexels.com/photos/3889868/pexels-photo-3889868.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" onclick="openModal(this.src)">
-        <img src="https://images.pexels.com/photos/2360569/pexels-photo-2360569.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" onclick="openModal(this.src)">
-        <img src="https://images.pexels.com/photos/3779785/pexels-photo-3779785.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" onclick="openModal(this.src)">
-        <img src="https://images.pexels.com/photos/259987/pexels-photo-259987.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" onclick="openModal(this.src)">
-        <img src="https://images.pexels.com/photos/2350514/pexels-photo-2350514.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" onclick="openModal(this.src)">
-      </div>
-    </div>
-    
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-      <span class="close">&times;</span>
-      <img class="modal-content" id="modalImage">
-    </div>
-    
-  </div>
-</div>
-
-
-
-<div class="container-fluid container-fluid-max">
-  <div class="row mt-5 footer-img">
-    <img src="images/footer-img.png" alt="" />
     <div class="container-fluid">
-      <div class="row h-100 py-4">
-        <div class="col-md-6 footer-heading">
-          <h1>Let’s Connect Now !</h1>
-          <p>Take Initiative Now For Better Choice</p>
+      <div class="sucess-pro">
+        <div class="heading-title">
+          <div class="mount heading-title-icon">
+            <img src="images/icon-park-outline_building-two.png" alt="" />
+          </div>
+          <div class="mount-para heading-title-content">
+            <div class="heading-title-sub">
+              <p class="name-line heading-title-sub-content">Our Work</p>
+              <span class="heading-title-line"></span>
+            </div>
+            <h3 class="heading-title-main-content">Portfolio</h3>
+          </div>
         </div>
 
-        <div class="col-md-6 connect-now-right">
-          <div class="common-btn-filled">
-            <a href="">
-              <p>Contact Us</p>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="36"
-                height="36"
-                viewBox="0 0 36 36"
-                fill="none"
-              >
-                <path d="M15 25.5L22.5 18L15 10.5V25.5Z" fill="#FEBC2F" />
-              </svg>
-            </a>
+        <div class="sucess-meet">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card shadow-sm rounded-3">
+                <div class="testimonial-container">
+                  <img src="images/sliderimg1.png" />
+                  <div class="testimonial-content">
+                    <h5 class="testimonial-content-heading">Kasa Grand</h5>
+                    <p>No: 110, West Mambalam, Chennai - 600043</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card shadow-sm rounded-3">
+                <div class="testimonial-container">
+                  <img src="images/sliderimg1.png" />
+                  <div class="testimonial-content">
+                    <h5 class="testimonial-content-heading">Kasa Grand</h5>
+                    <p>No: 110, West Mambalam, Chennai - 600043</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card shadow-sm rounded-3">
+                <div class="testimonial-container">
+                  <img src="images/sliderimg1.png" />
+                  <div class="testimonial-content">
+                    <h5 class="testimonial-content-heading">Kasa Grand</h5>
+                    <p>No: 110, West Mambalam, Chennai - 600043</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card shadow-sm rounded-3">
+                <div class="testimonial-container">
+                  <img src="images/sliderimg1.png" />
+                  <div class="testimonial-content">
+                    <h5 class="testimonial-content-heading">Kasa Grand</h5>
+                    <p>No: 110, West Mambalam, Chennai - 600043</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card shadow-sm rounded-3">
+                <div class="testimonial-container">
+                  <img src="images/sliderimg1.png" />
+                  <div class="testimonial-content">
+                    <h5 class="testimonial-content-heading">Kasa Grand</h5>
+                    <p>No: 110, West Mambalam, Chennai - 600043</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card shadow-sm rounded-3">
+                <div class="testimonial-container">
+                  <img src="images/sliderimg1.png" />
+                  <div class="testimonial-content">
+                    <h5 class="testimonial-content-heading">Kasa Grand</h5>
+                    <p>No: 110, West Mambalam, Chennai - 600043</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
-<div class="container-fluid p-0 m-0 container-fluid-max footer-container">
-  <div class="dot-image">
-    <img src="images/dots.png" alt="" />
-  </div>
-  <div class="container-fluid">
-    <div class="row footer-container-row">
-      <div class="col-lg-6">
-        <div class="creations">
-          <img src="images/ag-creation.png" alt="" />
+    <div class="container-fluid">
+      <div class="gallery">
+        <div class="gallery-title">
+          <div class="heading-title">
+            <div class="mount heading-title-icon">
+              <img src="images/icon-park-outline_building-two.png" alt="" />
+            </div>
+            <div class="mount-para heading-title-content">
+              <div class="heading-title-sub">
+                <p class="name-line heading-title-sub-content">Our Work</p>
+                <span class="heading-title-line"></span>
+              </div>
+              <h3 class="heading-title-main-content">Portfolio</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="row gallery-row">
+          <div class="column">
+            <img src="images/pro1.png" onclick="openModal(this.src)" />
+            <img src="images/pro2.png" onclick="openModal(this.src)" />
+            <img src="images/pro3.png" onclick="openModal(this.src)" />
+          </div>
+          <div class="column">
+            <img src="images/pro4.png" onclick="openModal(this.src)" />
+            <img src="images/pro5.png" onclick="openModal(this.src)" />
+            <img src="images/pro6.png" onclick="openModal(this.src)" />
+            <img
+              src="https://images.pexels.com/photos/2019546/pexels-photo-2019546.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              onclick="openModal(this.src)"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="https://images.pexels.com/photos/3889868/pexels-photo-3889868.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              onclick="openModal(this.src)"
+            />
+            <img
+              src="https://images.pexels.com/photos/2360569/pexels-photo-2360569.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              onclick="openModal(this.src)"
+            />
+            <img
+              src="https://images.pexels.com/photos/3779785/pexels-photo-3779785.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              onclick="openModal(this.src)"
+            />
+            <img
+              src="https://images.pexels.com/photos/259987/pexels-photo-259987.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              onclick="openModal(this.src)"
+            />
+            <img
+              src="https://images.pexels.com/photos/2350514/pexels-photo-2350514.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              onclick="openModal(this.src)"
+            />
+          </div>
+        </div>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="modalImage" />
         </div>
       </div>
+    </div>
 
-      <div class="col-lg-6 creation-common">
-        <div class="creation-secound">
-          <div class="creations-list">
-            <p>COMPANY</p>
-            <ul>
-              <a href=""><li>About Us</li></a>
-              <a href=""><li>Projects</li></a>
-              <a href=""><li>Contact Us</li></a>
-            </ul>
-          </div>
+    <div class="container-fluid container-fluid-max">
+      <div class="row mt-5 footer-img">
+        <img src="images/footer-img.png" alt="" />
+        <div class="container-fluid">
+          <div class="row h-100 py-4">
+            <div class="col-md-6 footer-heading">
+              <h1>Let’s Connect Now !</h1>
+              <p>Take Initiative Now For Better Choice</p>
+            </div>
 
-          <div class="creations-list">
-            <p>Services</p>
-            <ul>
-              <a href=""><li>Renovation</li></a>
-              <a href=""><li>Building</li></a>
-              <a href=""><li>Construction</li></a>
-              <a href=""><li>Making</li></a>
-            </ul>
-          </div>
-
-          <div class="creations-list">
-            <p>Contact</p>
-            <ul>
-              <li>+91 89268 72938</li>
-              <li>demo@gmail.com</li>
-              <li>
-                132 Dartmouth Street Boston, Massachusetts 02156 United States
-              </li>
-            </ul>
+            <div class="col-md-6 connect-now-right">
+              <div class="common-btn-filled">
+                <a href="">
+                  <p>Contact Us</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="36"
+                    height="36"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                  >
+                    <path d="M15 25.5L22.5 18L15 10.5V25.5Z" fill="#FEBC2F" />
+                  </svg>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
-<div class="rights">
-  <p>Copyright @ 2024 AG Creations by High On Code All Rights Reserved</p>
-</div>
+    <div class="container-fluid p-0 m-0 container-fluid-max footer-container">
+      <div class="dot-image">
+        <img src="images/dots.png" alt="" />
+      </div>
+      <div class="container-fluid">
+        <div class="row footer-container-row">
+          <div class="col-lg-6">
+            <div class="creations">
+              <img src="images/ag-creation.png" alt="" />
+            </div>
+          </div>
 
+          <div class="col-lg-6 creation-common">
+            <div class="creation-secound">
+              <div class="creations-list">
+                <p>COMPANY</p>
+                <ul>
+                  <a href=""><li>About Us</li></a>
+                  <a href=""><li>Projects</li></a>
+                  <a href=""><li>Contact Us</li></a>
+                </ul>
+              </div>
 
-<script src="index.js" ></script>
-    
-</body>
+              <div class="creations-list">
+                <p>Services</p>
+                <ul>
+                  <a href=""><li>Renovation</li></a>
+                  <a href=""><li>Building</li></a>
+                  <a href=""><li>Construction</li></a>
+                  <a href=""><li>Making</li></a>
+                </ul>
+              </div>
+
+              <div class="creations-list">
+                <p>Contact</p>
+                <ul>
+                  <li>+91 89268 72938</li>
+                  <li>demo@gmail.com</li>
+                  <li>
+                    132 Dartmouth Street Boston, Massachusetts 02156 United
+                    States
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rights">
+      <p>Copyright @ 2024 AG Creations by High On Code All Rights Reserved</p>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
 </html>

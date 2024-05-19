@@ -1043,27 +1043,32 @@ a {
 /* About page */
 
 .first-bg-color {
-  padding: 0;
-  margin-top: 80px;
+  padding: 60px 0px;
+  margin-top: -250px;
   background: #272d63;
   width: 100%;
-  max-height: 950px;
+  max-height: 550px;
+  height: 600px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   flex-direction: column;
+}
+
+.contact-landing-img{
+  padding-left: 60px;
 }
 
 .partner-img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  
 }
 
-.partner-img img{
-  width: 100%;
-  height: 70%;
+.part img {
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
 }
 
 .part img {
@@ -1084,24 +1089,20 @@ a {
 }
 
 .about-heading h1 {
-  font-weight: 600;
+  font-weight: 700;
 }
+
 .about-sub {
   display: flex;
- 
-}
-.about-sub h6 {
-  padding-left: 40px;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
 }
 
 .about-sub p {
   background: #ed5c05;
-  width: 100%;
-  max-width: 90px;
+  width: 55px;
   height: 2px;
-  margin-top: 10px;
-  margin-left: 10px;
-  padding-left: 20px;
 }
 
 .about-home img {
@@ -1115,13 +1116,24 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   height: 600px;
+}
+
+.about-home::before{
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -5%;
+  background-color: #CED1F0;
+  height: 100px;
+  width: 100px;
+  z-index: -1;
 }
 
 .first-bg-color h1 {
   color: rgba(255, 255, 255, 0.2);
-  font-weight: 300;
-  padding-top: 220px;
 }
 
 .about-story img {
@@ -1326,7 +1338,7 @@ a {
 }
 
 .common-landing-opener {
-  width: 80%;
+  width: 90%;
 }
 
 .contact-landing-para p {
@@ -1366,4 +1378,44 @@ a {
 
 .contact-hide {
   display: block;
+}
+
+.footer-rights p{
+  font-size: 14px;
+}
+
+@media screen and (max-width: 576px) {
+  .first-bg-color{
+    margin-top: 0;
+    justify-content: center;
+  }
+  .common-landing-opener{
+    width: 95%;
+  }
+  .about-home{
+    height: 450px;
+    padding-top: 100px;
+  }
+  .about-home img{
+    height: 450px;
+  }
+
+  .footer-rights p{
+    font-size: 12px;
+  }
+  
+  .service-whole{
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+
+  .service-right-info{
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    display: none !important;
+  }
+  
+  .about-home::before{
+    top: 7%;
+  }
 }
