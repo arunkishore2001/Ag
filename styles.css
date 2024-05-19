@@ -128,18 +128,27 @@ a {
 }
 
 .navigation .nav-control a .nav-hover-line {
-  width: 100%;
+  width: 0;
   position: absolute;
   background-color: #ed5c05;
-  height: 3px;
-  bottom: 30px;
+  height: 5px;
+  bottom: 0;
   opacity: 0;
   transition: 0.2s ease-in;
 }
 
+.hidenav a{
+  font-weight: 500;
+}
+
+.hidenav.active a{
+  color: #ed5c05;
+} 
+
 .navigation .nav-control a:hover > .nav-hover-line {
   bottom: 0;
   opacity: 1;
+  width: 100%;
 }
 
 .navigation .nav-control li {
@@ -1357,24 +1366,4 @@ a {
 
 .contact-hide {
   display: block;
-}
-
-@media (max-width: 800px) {
-  .hidenav {
-    display: none;
-  }
-
-  .menu-btn {
-    display: block;
-  }
-
-  .contact-hide {
-    display: none;
-  }
-}
-
-@media (max-width: 400px) {
-  .sidebar {
-    width: 100%;
-  }
 }

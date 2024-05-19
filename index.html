@@ -37,8 +37,11 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+
+    <link rel="stylesheet" href="navBar.css" />
   </head>
   <body>
+
     <div class="nav-container sticky-top">
       <div class="container-fluid top-nav-bar">
         <div class="row navigation">
@@ -51,52 +54,9 @@
               </a>
             </div>
 
-            <div class="nav-control">
-              <ul class="sidebar text-decoration-none p-0 m-0 div-center">
-                <li onclick="closeSidebar()">
-                  <a href="#"
-                    ><svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="64px"
-                      viewBox="0 -960 960 960"
-                      width="34px"
-                      fill="#75FBFD"
-                    >
-                      <path
-                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="index.html"
-                    >Home <span class="nav-hover-line"></span
-                  ></a>
-                </li>
-                <li>
-                  <a href="about.html"
-                    >About <span class="nav-hover-line"></span
-                  ></a>
-                </li>
-                <li>
-                  <a href="service.html"
-                    >Service <span class="nav-hover-line"></span
-                  ></a>
-                </li>
-                <li>
-                  <a href="project.html"
-                    >Project <span class="nav-hover-line"></span
-                  ></a>
-                </li>
-                <li>
-                  <a href="contact.html"
-                    >Contact <span class="nav-hover-line"></span
-                  ></a>
-                </li>
-              </ul>
-
+            <div class="nav-control d-none d-md-block">
               <ul class="main-nav text-decoration-none p-0 m-0 div-center">
-                <li class="hidenav">
+                <li class="hidenav active">
                   <a href="index.html"
                     >Home <span class="nav-hover-line"></span
                   ></a>
@@ -120,27 +80,11 @@
                   <a href="contact.html"
                     >Contact <span class="nav-hover-line"></span
                   ></a>
-                </li>
-
-                <li class="menu-btn" onclick="showSidebar()">
-                  <a href="#"
-                    ><svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="24px"
-                      viewBox="0 -960 960 960"
-                      width="24px"
-                      fill="#75FBFD"
-                    >
-                      <path
-                        d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
-                      />
-                    </svg>
-                  </a>
                 </li>
               </ul>
             </div>
 
-            <div class="contact-hide common-btn-filled">
+            <div class="contact-hide common-btn-filled d-none d-md-block">
               <a href="">
                 <p>Contact Us</p>
                 <svg
@@ -154,10 +98,43 @@
                 </svg>
               </a>
             </div>
+
+            <div class="mobile-nav d-md-none">
+              <input
+                type="checkbox"
+                id="main-navigation-toggle"
+                class="btn btn--close"
+                title="Toggle main navigation"
+              />
+              <label for="main-navigation-toggle">
+                <span></span>
+              </label>
+
+              <nav id="main-navigation" class="nav-main">
+                <ul class="menu">
+                  <li class="menu__item">
+                    <a class="menu__link" href="/index.html">Home</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="/about.html">About</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="/service.html">Services</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="/project.html">Projects</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="/contact.html">Contact</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
     <div class="container-fluid container-fluid-max landing-page">
       <div class="row">
         <div class="col-md-3 p-0 dev-left">
@@ -704,7 +681,6 @@
                 <!-- Dots will be generated here dynamically -->
               </div>
             </div>
-            
             </div>
           </div>
         </div>
