@@ -11,6 +11,12 @@
   max-width: 1400px;
 }
 
+@media (max-width: 576px) {
+  .container-fluid{
+    max-width: 95%;
+  }
+}
+
 .container-fluid-max {
   max-width: 100%;
 }
@@ -1053,6 +1059,20 @@ a {
   justify-content: flex-end;
   align-items: center;
   flex-direction: column;
+}
+
+.our-partners{
+  padding: 60px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+
+.our-partners .part img{
+  height: 150px;
+  width: 150px;
 }
 
 .contact-landing-img{

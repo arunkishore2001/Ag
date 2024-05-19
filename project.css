@@ -54,28 +54,19 @@
   width: 100%;
 }
 
-
-.sucess-pro{
-  padding: 60px;
-}
-
-.sucess-meet{
-  padding: 20px;
-}
-
-.sucess-meet .row{
+.sucess-meet .row {
   padding: 10px;
 }
 
-.sucess-meet .row .col-md-6{
+.sucess-meet .card {
+  border: 0px;
+  box-shadow: unset !important;
+}
+
+.sucess-meet .row .col-md-6 {
   padding: 20px;
 }
 
-
-
-
-
-
-.gallery-title{
+.gallery-title {
   padding-bottom: 40px;
 }

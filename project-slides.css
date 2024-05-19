@@ -7,10 +7,6 @@
   padding: 0 4px;
 }
 
-.gallery {
-  padding: 60px;
-}
-
 .column {
   flex: 25%;
   max-width: 33.3%;
@@ -27,24 +23,17 @@
   transition: 0.3s linear;
 }
 
-.column img:hover {
-  
-}
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .column {
     flex: 50%;
     max-width: 50%;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 576px) {
   .column {
     flex: 100%;
     max-width: 100%;
-  }
-  .column img {
-    
   }
 }
 
