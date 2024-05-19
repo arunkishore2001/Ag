@@ -1260,7 +1260,7 @@ a {
 
 .vission-title h1 {
   color: rgba(39, 45, 99, 0.08);
-  padding-left: 180px;
+  padding-left: 120px;
   padding-top: 50px;
 }
 
@@ -1356,6 +1356,7 @@ a {
   height: 40%;
   position: absolute;
   z-index: -1;
+  max-width: 1255px;
 }
 
 .meet-member h6 {
@@ -1423,6 +1424,11 @@ a {
 
 @media screen and (max-width: 576px) {
 
+  body{
+    margin: 0;
+    padding: 0 0;
+  }
+
   .about-mission-title{
     margin-left: 0px;
    
@@ -1439,6 +1445,11 @@ a {
 
   .mission2-img img{
     padding: 10px;
+    width: 160px;
+  }
+  .mission1-img img{
+    padding: 10px;
+    width: 160px;
   }
 
   .first-bg-color{
