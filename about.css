@@ -1,0 +1,14 @@
+
+
+@media screen and (max-width:576px) {
+
+    .our-partners{
+        display: none;
+      }
+    
+    
+      .first-bg-color{
+        display: none;
+      }
+    
+}

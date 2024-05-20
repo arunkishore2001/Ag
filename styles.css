@@ -1270,7 +1270,7 @@ a {
 }
 
 .process{
- margin: 0;
+ margin-left: -50px;
 }
 
 .process-main {
@@ -1287,9 +1287,12 @@ a {
   margin: 0;
 }
 
+
+
 .process-sec {
   
   margin-top: 40px;
+  
 }
 
 .process-sec p {
@@ -1443,14 +1446,7 @@ a {
     padding: 0 0;
   }
 
-  .our-partners{
-    display: none;
-  }
-
-
-  .first-bg-color{
-    display: none;
-  }
+  
 
   .right-ang{
     padding-top: 80px;
