@@ -37,8 +37,9 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-
+    <link rel="stylesheet" href="animation.css">
     <link rel="stylesheet" href="navBar.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
 
@@ -135,11 +136,11 @@
       </div>
     </div>
 
-    <div class="container-fluid container-fluid-max landing-page">
+    <div data-aos="fade-up"  class="container-fluid container-fluid-max landing-page">
       <div class="row">
         <div class="col-md-3 p-0 dev-left">
           <div class="main-box">
-            <div class="info">
+            <div  class="info">
               <div class="landing-page-top-content">
                 <div
                   class="line"
@@ -151,7 +152,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-9 p-0 home-img">
+        <div class="col-md-9 p-0 home-img ">
           <img src="images/home.png" alt="" />
         </div>
       </div>
@@ -160,7 +161,7 @@
     <div class="container-fluid experience-section">
       <div class="row">
         <div class="col-md-8 exp">
-          <div class="col duo">
+          <div data-aos="fade-right" class="col duo">
             <div class="experience2">
               <h2
                 id="count1"
@@ -175,7 +176,7 @@
             </div>
           </div>
 
-          <div class="col duo ms-md-3">
+          <div data-aos="fade-left" class="col duo ms-md-3">
             <div class="experience2">
               <h2
                 id="count2"
@@ -191,17 +192,17 @@
           </div>
         </div>
         <div class="col-md-4 d-none d-md-block">
-          <div class="screen">
-            <img class="" src="images/screen.png" alt="" />
+          <div  class="screen">
+            <img data-aos="fade-up" class="" src="images/screen.png" alt="" />
           </div>
         </div>
       </div>
     </div>
 
-    <div class="str-line my-4"></div>
+    <div  class="str-line my-4"></div>
 
     <div class="container-fluid benefits-section pt-4">
-      <div class="heading-title">
+      <div data-aos="fade-right"   class="heading-title animate-bottom-to-top">
         <div class="mount heading-title-icon">
           <img src="images/icon-park-outline_building-two.png" alt="" />
         </div>
@@ -216,7 +217,7 @@
 
       <div class="row mt-4">
         <div class="col-md-8">
-          <div class="row">
+          <div data-aos="fade-up"  class="row">
             <div class="col-sm-6 d-flex benefits-container">
               <div class="benefits-icon">
                 <img src="images/speak.png" alt="" />
@@ -276,7 +277,7 @@
     <div class="container-fluid experts-section mt-5 pt-xl-5">
       <div class="row pt-sm-5">
         <div class="col-sm-5 pb-5 pb-sm-0 left-experts">
-          <div class="left-ang-img">
+          <div data-aos="fade-left" class="left-ang-img ">
             <span class="left-experts-background">
               <img src="images/archi.png" alt="" />
             </span>
@@ -285,11 +286,11 @@
 
         <div class="col-sm-6">
           <div class="col right-ang">
-            <div class="heading-title">
+            <div data-aos="fade-right" class="heading-title">
               <div class="mount heading-title-icon">
                 <img src="images/icon-park-outline_building-two.png" alt="" />
               </div>
-              <div class="mount-para heading-title-content">
+              <div class="mount-para heading-title-content ">
                 <div class="heading-title-sub">
                   <p class="name-line heading-title-sub-content">We</p>
                   <span class="heading-title-line"></span>
@@ -299,18 +300,18 @@
             </div>
 
             <div class="angle-para mt-4">
-              <p class="para-left">
+              <p data-aos="fade-up"  class="para-left">
                 Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                 vulputate libero et velit interdum, ac aliquet odio mattis.
               </p>
-              <p class="para-sec mt-4">
+              <p data-aos="fade-up"  class="para-sec mt-4">
                 Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                 vulputate libero et velit interdum, ac aliquet odio mattis.Rorem
                 ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputa
               </p>
             </div>
 
-            <div class="common-btn-filled mt-5">
+            <div data-aos="fade-up"  class="common-btn-filled mt-5">
               <a href="">
                 <p>About Us</p>
                 <svg
@@ -332,7 +333,7 @@
     <div class="container-fluid services-section my-5 pt-5">
       <div class="row mb-5">
         <div class="col-sm-6 d-flex">
-          <div class="heading-title">
+          <div data-aos="fade-right" class="heading-title">
             <div class="mount heading-title-icon">
               <img src="images/icon-park-outline_building-two.png" alt="" />
             </div>
@@ -348,7 +349,8 @@
 
         <div class="col-sm-6 mt-sm-0 mt-5">
           <div class="service-title-content">
-            <svg
+            <div data-aos="zoom-in"  class="ag-img">
+            <svg  
               width="64%"
               viewBox="0 0 437 325"
               fill="none"
@@ -365,7 +367,8 @@
                 stroke-width="3"
               />
             </svg>
-            <p>
+          </div>
+            <p data-aos="fade-left" >
               Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
               vulputate libero et velit interdum, ac aliquet odio mattis.Rorem
               ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputa
@@ -375,7 +378,7 @@
       </div>
 
       <div class="row service-grid">
-        <div class="service-container col-sm-6 col-md-4">
+        <div data-aos="fade-right"  class="service-container col-sm-6 col-md-4">
           <img class="image1" src="images/service2.png" alt="" />
           <div class="image-box"></div>
           <div
@@ -385,7 +388,7 @@
           </div>
         </div>
 
-        <div class="service-container col-sm-6 col-md-4">
+        <div data-aos="fade-up"  class="service-container col-sm-6 col-md-4">
           <img class="image1" src="images/service2.png" alt="" />
           <div class="image-box"></div>
           <div
@@ -395,7 +398,7 @@
           </div>
         </div>
 
-        <div class="service-container col-sm-6 col-md-4">
+        <div data-aos="fade-left" class="service-container col-sm-6 col-md-4">
           <img class="image1" src="images/service2.png" alt="" />
           <div class="image-box"></div>
           <div
@@ -405,7 +408,7 @@
           </div>
         </div>
 
-        <div class="service-container col-sm-6 col-md-6">
+        <div data-aos="fade-right" class="service-container col-sm-6 col-md-6">
           <img class="image1" src="images/service2.png" alt="" />
           <div class="image-box"></div>
           <div
@@ -415,7 +418,7 @@
           </div>
         </div>
 
-        <div class="service-container col-md-6">
+        <div data-aos="fade-left" class="service-container col-md-6">
           <img class="image1" src="images/service2.png" alt="" />
           <div class="image-box"></div>
           <div
@@ -427,7 +430,7 @@
       </div>
     </div>
 
-    <div class="container-fluid services-section mt-5 pt-5">
+    <div data-aos="fade-right"  class="container-fluid services-section mt-5 pt-5">
       <div class="row">
         <div class="col-12">
           <div class="heading-title">
@@ -446,12 +449,12 @@
       </div>
     </div>
 
-    <div class="container-fluid-max projects-section">
+    <div data-aos="fade-up" class="container-fluid-max projects-section">
       <div class="projects-back-rectangle"></div>
       <div class="container-fluid mt-4 mb-5">
         <div class="row">
           <div class="col-md-8 mt-2 mb-4">
-            <p>
+            <p  >
               1Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
               vulputate libero et velit interdum, ac aliquet odio mattis. Class
               aptent taciti sociosqu ad litora torquent per conubia nostra, per
@@ -572,7 +575,7 @@
       <div class="container-fluid h-100">
         <div class="row py-4 h-100">
           <div class="col-lg-6 connect">
-            <div class="heading-title mt-4">
+            <div data-aos="fade-right" class="heading-title mt-4">
               <div class="mount heading-title-icon">
                 <img src="images/icon-park-outline_building-two.png" alt="" />
               </div>
@@ -592,26 +595,26 @@
             <div
               class="testimonial-main-content mt-3 mt-md-0 d-flex align-items-center justify-content-lg-center h-100"
             >
-            <div class="slider-container">
+            <div data-aos="fade-left" class="slider-container">
               <div class="slider">
                 <div class="slide">
                   <div class="testimonial-main-content">
                     <div class="testimonials-main">
-                      <div class="testimonials-icon mt-4">
+                      <div data-aos="fade-up" class="testimonials-icon mt-4">
                         <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M18.625 23.375V11.75L27.25 0.125H31.75L24.25 11.75H30.25V23.375H18.625ZM0.25 23.375V11.75L8.875 0.125H13.375L5.875 11.75H11.875V23.375H0.25Z" fill="black" />
                         </svg>
                       </div>
-                      <div class="testimonials-header mt-3">
+                      <div data-aos="fade-up" class="testimonials-header mt-3">
                         <h4>Feedback Title</h4>
                       </div>
-                      <div class="testimonaials-main-content mt-3">
+                      <div data-aos="fade-up" class="testimonaials-main-content mt-3">
                         <p>
                           Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
                           Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
                         </p>
                       </div>
-                      <div class="d-flex testimonials-details align-items-center flex-row my-3">
+                      <div data-aos="fade-up" class="d-flex testimonials-details align-items-center flex-row my-3">
                         <img class="testimonials-image" src="./images/mission2.png" alt="">
                         <div>
                           <h6>Arun Kishore</h6>
@@ -677,7 +680,7 @@
                 </div>
                 <!-- Repeat .slide divs for additional testimonials -->
               </div>
-              <div class="slider-dots">
+              <div data-aos="fade-up" class="slider-dots">
                 <!-- Dots will be generated here dynamically -->
               </div>
             </div>
@@ -688,7 +691,7 @@
     </div>
 
     <div class="container-fluid">
-      <div class="row py-4">
+      <div data-aos="fade-up" class="row py-4">
         <div class="col-md-4 d-none d-md-block">
           <div class="connect-img">
             <img src="images/contact-img.png" alt="" />
@@ -696,7 +699,7 @@
         </div>
 
         <div class="col-md-4 connect">
-          <div class="heading-title">
+          <div data-aos="fade-right" class="heading-title">
             <div class="mount heading-title-icon">
               <img src="images/icon-park-outline_building-two.png" alt="" />
             </div>
@@ -709,7 +712,7 @@
             </div>
           </div>
 
-          <div class="contact-page w-100">
+          <div data-aos="fade-up" class="contact-page w-100">
             <div class="connect-form w-100">
               <form action="" class="w-100">
                 <label for="">Name</label>
@@ -739,7 +742,7 @@
                     </a>
                   </div>
 
-                  <div class="social-link">
+                  <div  class="social-link">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="138"
@@ -776,12 +779,12 @@
           <div
             class="contact-right mt-5 mt-md-0 pt-3 pt-md-0 align-items-md-center position-relative"
           >
-            <div class="connect-info">
+            <div data-aos="fade-left" class="connect-info">
               <img src="images/ag-bg-remove.png" alt="" />
               <div class="ag-circle-bg"></div>
             </div>
 
-            <div class="contact-detail w-100">
+            <div data-aos="fade-left" class="contact-detail w-100">
               <div class="detail-item">
                 <img src="images/phone.png" alt="" />
                 <p>+1012 3456 789</p>
@@ -804,7 +807,7 @@
     </div>
 
     <div class="container-fluid container-fluid-max">
-      <div class="row mt-5 footer-img">
+      <div data-aos="fade-up" class="row mt-5 footer-img">
         <img src="images/footer-img.png" alt="" />
         <div class="container-fluid">
           <div class="row h-100 py-4">
@@ -834,30 +837,30 @@
       </div>
     </div>
 
-    <div class="container-fluid p-0 m-0 container-fluid-max footer-container">
+    <div  class="container-fluid p-0 m-0 container-fluid-max footer-container">
       <div class="dot-image">
         <img src="images/dots.png" alt="" />
       </div>
       <div class="container-fluid">
         <div class="row footer-container-row">
           <div class="col-lg-6">
-            <div class="creations">
+            <div data-aos="fade-right" class="creations">
               <img src="images/ag-creation.png" alt="" />
             </div>
           </div>
 
           <div class="col-lg-6 creation-common">
             <div class="creation-secound">
-              <div class="creations-list">
+              <div data-aos="fade-left" class="creations-list">
                 <p>COMPANY</p>
-                <ul>
+                <ul >
                   <a href=""><li>About Us</li></a>
                   <a href=""><li>Projects</li></a>
                   <a href=""><li>Contact Us</li></a>
                 </ul>
               </div>
 
-              <div class="creations-list">
+              <div data-aos="fade-left" class="creations-list">
                 <p>Services</p>
                 <ul>
                   <a href=""><li>Renovation</li></a>
@@ -867,7 +870,7 @@
                 </ul>
               </div>
 
-              <div class="creations-list">
+              <div data-aos="fade-left" class="creations-list">
                 <p>Contact</p>
                 <ul>
                   <li>+91 89268 72938</li>
@@ -984,5 +987,9 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
