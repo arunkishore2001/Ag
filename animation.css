@@ -1,10 +1,3 @@
-.service-container .image-box {
-    transition: transform 0.5s; /* Smooth transition */
-}
-
-.service-container img:hover + .image-box {
-    transform: rotate(45deg); /* Rotate 45 degrees on hover */
-}
 
 
 /* Reusable animation class */
@@ -22,7 +15,60 @@
       transform: translateY(0);
       opacity: 1;
     }
+}
+
+.service-container:hover img {
+  transform: scale(1.1); /* Slightly zoom in the image on hover */
+}
+
+.service-container img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  transition: transform 0.3s ease; /* Add transition for smooth zoom effect */
+}
+  
+  .image-white-box {
+    width: 50%;
+    height: 60px;
+    background-color: #fff;
+    position: absolute;
+    
+    transition: all 0.3s ease; /* Smooth transition effect */
+  }
+  
+  .image-white-box h6 {
+    font-style: normal;
+    font-weight: 700;
+  }
+  
+  .service-container:hover .image-white-box {
+    width: 100%; /* Full width on hover */
+    height: 80px;
+    background-color: #ED5C05; /* Background color on hover */
+    left: 0px;
+    bottom: 0;
+    
+    /* Center align text by expanding width */
+    transform: none; /* Remove transform to cover full width */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    color: #fff; /* Text color change for visibility */
+   
+  }
+  
+  .service-container:hover .image-white-box h6 {
+    color: #fff; /* Text color change on hover */
+  }
+  
+
+  .service-container {
+    margin-top: 16px;
+    position: relative;
+    overflow: hidden; /* Prevent overflow of child elements */
   }
 
-
-  
+  .service-container:hover .image-box {
+    display: none; /* Hide the image-box on hover */
+  }
