@@ -37,6 +37,7 @@
 
     <link rel="stylesheet" href="navBar.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="animation.css">
   </head>
   <body>
     <div class="nav-container sticky-top">
@@ -137,7 +138,7 @@
         <div class="row">
           <div  class="col-md-12">
             <h1 data-aos="fade-right" class="text-center my-4 fw-700 landing-header-text">
-              SERVICES THAT YOU WANT WE SERVE
+             <span id="service-typing"></span>
             </h1>
 
             <div  class="mt-5 d-flex align-items-center justify-content-center">
@@ -189,8 +190,8 @@
     <div class="container-fluid">
       <div class="row mt-5">
         <div class="col-md-6 drawing overflow-hidden">
-          <div data-aos="fade-right" class="serive-img">
-            <img
+          <div data-aos="fade-right " class="serive-img">
+            <img 
               class="w-100 h-100 object-fit-cover"
               src="images/service1-img.png"
               alt=""
@@ -611,6 +612,52 @@
   </div>
 
     <script src="index.js"></script>
+
+    <script>
+       var strings = ["SERVICES THAT YOU WANT WE SERVE"];
+  
+  var textElement = document.getElementById("service-typing");
+  var currentStringIndex = 0;
+  var currentString = strings[currentStringIndex];
+  var typingDelay = 50; // Delay between each character typing
+ 
+  var typingSpeed = 100; // Speed of typing animation
+  var eraseSpeed = 100; // Speed of erasing animation
+  var loop = true;
+  
+  function type(currentLength) {
+    if (currentLength < currentString.length) {
+      textElement.textContent += currentString.charAt(currentLength);
+      setTimeout(() => type(currentLength + 1), typingSpeed);
+    } else {
+      setTimeout(() => erase(currentString.length), eraseDelay);
+    }
+  }
+  
+  function erase(currentLength) {
+    if (currentLength > 0) {
+      textElement.textContent = currentString.slice(0, currentLength - 1);
+      setTimeout(() => erase(currentLength - 1), eraseSpeed);
+    } else {
+      currentStringIndex++;
+      if (currentStringIndex >= strings.length) {
+        if (loop) {
+          currentStringIndex = 0;
+        } else {
+          return;
+        }
+      }
+      currentString = strings[currentStringIndex];
+      setTimeout(() => type(0), typingDelay);
+    }
+  }
+  
+  document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(() => type(0), typingDelay);
+  });
+  
+
+    </script>
     
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
