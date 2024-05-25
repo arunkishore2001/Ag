@@ -98,9 +98,20 @@ a {
   display: block;
   height: 3px;
   max-width: 120px;
-  min-width: 100px;
+  
+  width: 100px; /* Set initial width */
   background: #272d63;
   margin-left: 20px;
+  animation: increaseWidth 2s forwards; /* Apply animation */
+}
+
+@keyframes increaseWidth {
+  0% {
+    width: 0px; /* Initial width */
+  }
+  100% {
+    width: 180px; /* Final width */
+  }
 }
 
 .heading-title-main-content {
@@ -136,7 +147,7 @@ a {
 .navigation .nav-control a .nav-hover-line {
   width: 0;
   position: absolute;
-  background-color: #ed5c05;
+  background-color: heading-title-line;
   height: 5px;
   bottom: 0;
   opacity: 0;
@@ -148,7 +159,7 @@ a {
 }
 
 .hidenav.active a {
-  color: #ed5c05;
+  color: heading-title-line;
 }
 
 .navigation .nav-control a:hover > .nav-hover-line {
@@ -232,6 +243,7 @@ a {
   border: 7px solid #272d63;
 }
 
+
 .duo {
   display: flex;
   gap: 20px;
@@ -240,7 +252,7 @@ a {
 }
 
 .count {
-  color: #ed5c05;
+  color: heading-title-line;
   font-size: 36px;
   font-weight: 600;
 }
@@ -391,7 +403,7 @@ a {
 .image-box {
   width: 90px;
   height: 90px;
-  border: 5px solid #ed5c05;
+  border: 5px solid heading-title-line;
   margin-top: -134px;
   margin-left: 35%;
   position: absolute;
@@ -458,7 +470,7 @@ a {
 .testimonials-main::before {
   width: 100%;
   height: 100%;
-  background-color: #ed5c05;
+  background-color: heading-title-line;
   content: "";
   position: absolute;
   border-radius: 30px;
@@ -1219,7 +1231,7 @@ a {
 }
 
 .about-main-content {
-  background: linear-gradient(270deg, #ed5c05 0%, #272d63 100%);
+  background: linear-gradient(270deg, heading-title-line 0%, #272d63 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

@@ -311,16 +311,12 @@
               </p>
             </div>
 
-            <div data-aos="fade-up"  class="common-btn-filled mt-5">
-              <a href="">
-                <p>About Us</p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="36"
-                  height="36"
-                  viewBox="0 0 36 36"
-                  fill="none"
-                >
+            <div data-aos="fade-up" class="slidingVertical common-btn-filled mt-5">
+              <a href="" class="animate-text">
+                <span>About Us</span>
+              
+                
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
                   <path d="M15 25.5L22.5 18L15 10.5V25.5Z" fill="#FEBC2F" />
                 </svg>
               </a>
@@ -989,7 +985,15 @@
     <script src="index.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init();
+       // Initialize AOS
+       AOS.init({
+            once: true  // Ensures animation runs only once
+        });
+        
+        // Trigger AOS refresh after window load to ensure animations play on load
+        window.addEventListener('load', function() {
+            AOS.refresh();
+        });
     </script>
   </body>
 </html>
