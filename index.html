@@ -155,6 +155,7 @@
         <div class="col-md-9 p-0 home-img zoom-in-effect" >
          
           <img  src="images/home.png" alt=""/>
+          
         
         </div>
 
@@ -195,7 +196,7 @@
           </div>
         </div>
         <div class="col-md-4 d-none d-md-block">
-          <div  class="screen">
+          <div  class="screen zoom-in-effect">
             <img data-aos="fade-up" class="light-glow" src="images/screen.png" alt="" />
           </div>
         </div>
@@ -279,7 +280,7 @@
 
     <div class="container-fluid experts-section mt-5 pt-xl-5">
       <div class="row pt-sm-5">
-        <div class="col-sm-5 pb-5 pb-sm-0 left-experts">
+        <div class="col-sm-5 pb-5 pb-sm-0 left-experts  zoom-in-effect">
           <div data-aos="fade-left" class="left-ang-img ">
             <span class="left-experts-background ">
               <img class="light-glow" src="images/archi.png" alt="" />
@@ -315,10 +316,8 @@
             </div>
 
             <div data-aos="fade-up" class="slidingVertical common-btn-filled mt-5">
-              <a href="" class="animate-text">
-                <span>About Us</span>
-              
-                
+              <a href="#" class="animate-text">
+                <span id="slidingText">About Us</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
                   <path d="M15 25.5L22.5 18L15 10.5V25.5Z" fill="#FEBC2F" />
                 </svg>
@@ -377,7 +376,7 @@
       </div>
 
       <div class="row service-grid">
-        <div data-aos="fade-right"  class="service-container col-sm-6 col-md-4">
+        <div data-aos="fade-right"  class="service-container col-sm-6 col-md-4 ">
           <img class="image1" src="images/service2.png" alt="" />
           <div class="image-box"></div>
           <div
@@ -463,9 +462,9 @@
         </div>
         <div id="testimonialCarousel" class="carousel">
           <div class="carousel-inner">
-            <div class="carousel-item acive">
+            <div class="carousel-item acive ">
               <div class="card shadow-sm rounded-3">
-                <div class="testimonial-container zoom-in-effect">
+                <div class="testimonial-container ">
                   <img  src="images/sliderimg1.png" />
                   <div class="testimonial-content">
                     <h5 class="testimonial-content-heading">Kasa Grand</h5>
@@ -815,22 +814,17 @@
               <p>Take Initiative Now For Better Choice</p>
             </div>
 
-            <div class="col-md-6 connect-now-right">
-              <div class="common-btn-filled">
-                <a href="">
-                  <p>Contact Us</p>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="36"
-                    height="36"
-                    viewBox="0 0 36 36"
-                    fill="none"
-                  >
+            <div data-aos="fade-left" class="col-md-6 connect-now-right">
+              <div class="common-btn-filled slidingVertical-contact">
+                <a href="#" class="animate-text">
+                  <p id="slidingText-contact">Contact Us</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
                     <path d="M15 25.5L22.5 18L15 10.5V25.5Z" fill="#FEBC2F" />
                   </svg>
                 </a>
               </div>
             </div>
+            
           </div>
         </div>
       </div>
@@ -999,6 +993,44 @@
         });
     </script>
 
-   
+<script>
+ // Array of text content to slide through
+var textArray = ["About Us", "Visit Here"];
+var currentIndex = 0;
+var slidingTextElement = document.getElementById("slidingText");
+var containerElement = document.querySelector(".slidingVertical");
+
+function slideText() {
+  currentIndex = (currentIndex + 1) % textArray.length;
+  var newText = textArray[currentIndex];
+  
+  // Slide animation: Set height to 0, change text, then expand height
+  containerElement.style.height = "0";
+  setTimeout(function() {
+    slidingTextElement.innerText = newText;
+    containerElement.style.height = slidingTextElement.scrollHeight + "px";
+  }, 500); // 500ms delay for the animation
+}
+
+// Start sliding text animation
+var slideInterval = setInterval(slideText, 1000); // Change 2000 to adjust slide interval
+
+// Stop sliding on hover
+var linkElement = document.querySelector(".animate-text");
+linkElement.addEventListener("mouseover", function() {
+  clearInterval(slideInterval);
+});
+
+// Resume sliding on mouseout
+linkElement.addEventListener("mouseout", function() {
+  slideInterval = setInterval(slideText, 1000); // Change 2000 to adjust slide interval
+});
+
+</script>
+
+<script>
+ 
+</script>
+   <script src="contact-slide.js"></script>
   </body>
 </html>

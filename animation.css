@@ -18,14 +18,14 @@
 }
 
 .service-container:hover img {
-  transform: scale(1.1); /* Slightly zoom in the image on hover */
+  transform: scale(1.1); 
 }
 
 .service-container img {
   width: 100%;
   max-height: 400px;
   object-fit: cover;
-  transition: transform 0.3s ease; /* Add transition for smooth zoom effect */
+  transition: transform 0.3s ease; 
 }
   
   .image-white-box {
@@ -34,7 +34,7 @@
     background-color: #fff;
     position: absolute;
     
-    transition: all 0.3s ease; /* Smooth transition effect */
+    transition: all 0.3s ease; 
   }
   
   .image-white-box h6 {
@@ -43,52 +43,52 @@
   }
   
   .service-container:hover .image-white-box {
-    width: 100%; /* Full width on hover */
+    width: 100%; 
     height: 80px;
-    background-color: #ED5C05; /* Background color on hover */
+    background-color: #ED5C05; 
     left: 0px;
     bottom: 0;
     
-    /* Center align text by expanding width */
-    transform: none; /* Remove transform to cover full width */
-    display: flex; /* Flexbox for centering */
-    justify-content: center; /* Center text horizontally */
-    align-items: center; /* Center text vertically */
-    color: #fff; /* Text color change for visibility */
+    
+    transform: none; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
    
   }
   
   .service-container:hover .image-white-box h6 {
-    color: #fff; /* Text color change on hover */
+    color: #fff; 
   }
   
 
   .service-container {
     margin-top: 16px;
     position: relative;
-    overflow: hidden; /* Prevent overflow of child elements */
+    overflow: hidden; 
   }
 
   .service-container:hover .image-box {
-    display: none; /* Hide the image-box on hover */
+    display: none;
   }
 
 
   .light-glow {
-    border: 4px solid transparent; /* Increased border width */
-    border-radius: 10px; /* Rounded border */
-    animation: borderAnimation 4s linear infinite; /* Animation */
+    border: 4px solid transparent; 
+    border-radius: 10px; 
+    animation: borderAnimation 4s linear infinite; 
   }
   
   @keyframes borderAnimation {
     0% {
       border-color: transparent;
-      box-shadow: 0 0 20px rgba(237, 92, 5, 0.5); /* Orange glow effect */
+      box-shadow: 0 0 20px rgba(237, 92, 5, 0.5); 
     }
     100% {
       border-color: transparent;
-      box-shadow: 0 0 20px rgba(237, 92, 5, 0.5); /* Orange glow effect */
-      /* Rotate the glow 360 degrees */
+      box-shadow: 0 0 20px rgba(237, 92, 5, 0.5);
+      
     }
   }
   
@@ -96,12 +96,12 @@
 /* jumping */
 
   .main-box {
-    opacity: 0; /* Initially hidden */
-    transform: scale(0.5) rotate(-10deg); /* Initial transform */
-    animation: advancedAnimation 2s forwards; /* Apply animation */
+    opacity: 0; 
+    transform: scale(0.5) rotate(-10deg); 
+    animation: advancedAnimation 2s forwards; 
   }
   
-  /* Keyframes for the advanced animation */
+ 
   @keyframes advancedAnimation {
     0% {
       opacity: 0;
@@ -193,29 +193,63 @@
     font-weight: 700;
   }
   
+
+  @media screen and (max-width: 768px) {
+    .main-box {
+      animation: none; 
+      opacity: 1; 
+      transform: none; 
+    }
+
+    
+  }
  
+
+ 
+
+  
 /* zoom in */
 .zoom-in-effect {
-  overflow: hidden; /* Hide overflow to prevent scrollbars */
+  overflow: hidden; 
 }
 
 .zoom-in-effect img {
-  transition: transform 0.3s ease; /* Apply transition effect */
-  
+  overflow: hidden; 
+  transition: transform 0.3s ease; 
 }
 
 .zoom-in-effect img:hover {
-  animation: zoom-in-animation 5s infinite; /* Apply infinite animation */
+  transform: scale(1.1); 
 }
-
 @keyframes zoom-in-animation {
   0% {
-      transform: scale(1); /* Initial scale */
+      transform: scale(1); 
   }
   50% {
-      transform: scale(1.1); /* Zoom in to 110% */
+      transform: scale(1.1);
   }
   100% {
-      transform: scale(1); /* Back to original scale */
+      transform: scale(1); 
   }
 }
+
+
+
+.zoom-in-out-effect img {
+  overflow: hidden; 
+  transition: transform 0.3s ease;
+}
+
+.zoom-in-out-effect img:hover {
+  transform: scale(1.2);
+}
+
+.zoom-in-out-effect img {
+  transform-origin: center; 
+}
+
+.zoom-in-out-effect img:hover {
+  transform: scale(0.8); 
+}
+
+

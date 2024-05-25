@@ -4,10 +4,10 @@ var strings = [
   var textElement = document.getElementById("typing");
   var currentStringIndex = 0;
   var currentString = strings[currentStringIndex];
-  var typingDelay = 100; // Delay between each character typing
-  var eraseDelay = 600; // Delay before erasing the typed string
-  var typingSpeed = 200; // Speed of typing animation
-  var eraseSpeed = 100; // Speed of erasing animation
+  var typingDelay = 100; 
+  var eraseDelay = 600; 
+  var typingSpeed = 200; 
+  var eraseSpeed = 100;
   var loop = true;
   
   function type() {
