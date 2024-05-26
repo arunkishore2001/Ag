@@ -24,6 +24,7 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="contact.css" />
   <link rel="stylesheet" href="navBar.css" />
+  <link rel="stylesheet" href="animation.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/additional-methods.min.js"></script>
@@ -62,7 +63,13 @@
 
           <div data-aos="fade-left"  class="contact-hide common-btn-filled d-none d-md-block">
             <a href="">
-              <p>Contact Us</p>
+            <div class="words">
+                  <p >
+                    <span>Connect US</span>
+                    <span>Today</span>
+                    
+                  </p>
+                </div>
               <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
                 <path d="M15 25.5L22.5 18L15 10.5V25.5Z" fill="#FEBC2F" />
               </svg>
@@ -276,7 +283,13 @@
           <div class="col-md-6 connect-now-right">
           <div class="common-btn-filled slidingVertical-contact">
                 <a href="#" class="animate-text">
-                  <p id="slidingText-contact">Contact Us</p>
+                <div class="words">
+                  <p >
+                    <span>Connect US</span>
+                    <span>Today</span>
+                    
+                  </p>
+                </div>
                   <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
                     <path d="M15 25.5L22.5 18L15 10.5V25.5Z" fill="#FEBC2F" />
                   </svg>
@@ -486,7 +499,7 @@
   
 
   </script>
-  <script src="contact-slide.js" ></script>
+
 </body>
 
 </html>

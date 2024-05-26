@@ -75,7 +75,13 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
 
           <div class="contact-hide common-btn-filled d-none d-md-block">
             <a href="">
-              <p>Contact Us</p>
+            <div class="words">
+                  <p >
+                    <span>Connect US</span>
+                    <span>Today</span>
+                    
+                  </p>
+                </div>
               <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
                 <path d="M15 25.5L22.5 18L15 10.5V25.5Z" fill="#FEBC2F" />
               </svg>
@@ -288,7 +294,13 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
 
           <div data-aos="fade-up" class="slidingVertical common-btn-filled mt-5">
           <a href="#" class="animate-text">
-                <span id="slidingText">About Us</span>
+          <div class="words">
+                  <p >
+                    <span>About US</span>
+                    <span>See</span>
+                    
+                  </p>
+                </div>
 
 
               <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
@@ -1000,43 +1012,8 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
   </script>
 
 
-    
-<script>
- // Array of text content to slide through
-var textArray = ["About Us", "Visit Here"];
-var currentIndex = 0;
-var slidingTextElement = document.getElementById("slidingText");
-var containerElement = document.querySelector(".slidingVertical");
 
-function slideText() {
-  currentIndex = (currentIndex + 1) % textArray.length;
-  var newText = textArray[currentIndex];
-  
-  // Slide animation: Set height to 0, change text, then expand height
-  containerElement.style.height = "0";
-  setTimeout(function() {
-    slidingTextElement.innerText = newText;
-    containerElement.style.height = slidingTextElement.scrollHeight + "px";
-  }, 500); // 500ms delay for the animation
-}
 
-// Start sliding text animation
-var slideInterval = setInterval(slideText, 1000); // Change 2000 to adjust slide interval
-
-// Stop sliding on hover
-var linkElement = document.querySelector(".animate-text");
-linkElement.addEventListener("mouseover", function() {
-  clearInterval(slideInterval);
-});
-
-// Resume sliding on mouseout
-linkElement.addEventListener("mouseout", function() {
-  slideInterval = setInterval(slideText, 1000); // Change 2000 to adjust slide interval
-});
-
-</script>
-
-<script src="contact-slide.js"></script>
 </body>
 
 </html>

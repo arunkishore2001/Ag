@@ -253,3 +253,28 @@ transform: scale(0.8);
 }
 
 
+
+.words{
+  overflow: hidden;
+  display: inline-block;
+}
+.words span{
+  display: block;
+  height: 100%;
+  padding-left: 10px;
+
+font-weight: 500;
+
+  animation: spin_words 3s infinite;
+}
+@keyframes spin_words{
+  0%, 25% {
+    transform: translateY(0);
+}
+50%, 75% {
+    transform: translateY(-100%);
+}
+100% {
+    transform: translateY(0);
+}
+}
