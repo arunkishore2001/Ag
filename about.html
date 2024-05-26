@@ -35,6 +35,8 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="about.css" />
     <link rel="stylesheet" href="navBar.css" />
+    <link rel="stylesheet" href="animation.css">
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
@@ -80,7 +82,7 @@
               </ul>
             </div>
 
-            <div class="contact-hide common-btn-filled d-none d-md-block">
+            <div data-aos="fade-left" class="contact-hide common-btn-filled d-none d-md-block">
               <a href="">
                 <p>Contact Us</p>
                 <svg
@@ -136,7 +138,7 @@
         <div class="row">
           <div class="col-md-12">
             <h1 data-aos="fade-right" class="text-center my-4 fw-700 landing-header-text">
-              We Create Dreams With Beans
+             <span id="about-typing"></span>
             </h1>
 
             <div class="mt-5 d-flex align-items-center justify-content-center">
@@ -147,7 +149,7 @@
                   <h6>About Us</h6>
                   <p></p>
                 </div>
-                <div data-aos="fade-up" class="about-home">
+                <div data-aos="fade-up" class="about-home ">
                   <img src="images/home.png" alt="" />
                 </div>
               </div>
@@ -258,9 +260,9 @@
           </div>
         </div>
 
-        <div data-aos="fade-left" class="col-sm-5 pb-5 pb-sm-0 left-experts">
-          <div class="left-ang-img story">
-            <span class="left-experts-background about-story">
+        <div data-aos="fade-left" class="col-sm-5 pb-5 pb-sm-0 left-experts ">
+          <div class="left-ang-img story ">
+            <span class="left-experts-background about-story ">
               <img src="images/archi.png" alt="" />
             </span>
           </div>
@@ -273,10 +275,10 @@
         <div class="row">
           <div class="col-md-6 mission order-1 order-md-0">
             <div data-aos="fade-up" class="mission1-img">
-              <img src="images/mission1 (1).png" alt="" />
+              <img class="light-glow" src="images/mission1 (1).png" alt="" />
             </div>
-            <div data-aos="fade-down" class="mission2-img">
-              <img src="images/mission2.png" alt="" />
+            <div data-aos="fade-down" class="mission2-img ">
+              <img class="light-glow " src="images/mission2.png" alt="" />
             </div>
           </div>
 
@@ -287,7 +289,7 @@
 
             <div data-aos="fade-right" class="heading-title about-mission-title mt-5">
               <div class="mount heading-title-icon">
-                <img src="images/icon-park-outline_building-two.png" alt="" />
+                <img  src="images/icon-park-outline_building-two.png" alt="" />
               </div>
               <div class="mount-para heading-title-content">
                 <div class="heading-title-sub">
@@ -326,7 +328,7 @@
 
             <div data-aos="fade-right" class="heading-title about-mission-title mt-5">
               <div class="mount heading-title-icon">
-                <img src="images/icon-park-outline_building-two.png" alt="" />
+                <img  src="images/icon-park-outline_building-two.png" alt="" />
               </div>
               <div class="mount-para heading-title-content">
                 <div class="heading-title-sub">
@@ -352,7 +354,7 @@
 
           <div class="col-md-6 order-1 order-md-1 mission">
             <div data-aos="fade-left" class="vission-img">
-              <img src="images/vission-img.png" alt="" />
+              <img class="light-glow" src="images/vission-img.png" alt="" />
             </div>
           </div>
         </div>
@@ -485,17 +487,11 @@
               <p>Take Initiative Now For Better Choice</p>
             </div>
 
-            <div  class="col-md-6 connect-now-right">
-              <div data-aos="fade-left" class="common-btn-filled">
-                <a href="">
-                  <p>Contact Us</p>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="36"
-                    height="36"
-                    viewBox="0 0 36 36"
-                    fill="none"
-                  >
+            <div class="col-md-6 connect-now-right">
+              <div class="common-btn-filled slidingVertical-contact">
+                <a href="#" class="animate-text">
+                  <p id="slidingText-contact">Contact Us</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
                     <path d="M15 25.5L22.5 18L15 10.5V25.5Z" fill="#FEBC2F" />
                   </svg>
                 </a>
@@ -588,6 +584,54 @@
       });
     </script>
 
+    <script>
+      
+      var strings = ["We Create Dreams With Beans"];
+  
+  var textElement = document.getElementById("about-typing");
+  var currentStringIndex = 0;
+  var currentString = strings[currentStringIndex];
+  var typingDelay = 50; // Delay between each character typing
+ 
+  var typingSpeed = 100; // Speed of typing animation
+  var eraseSpeed = 100; // Speed of erasing animation
+  var loop = true;
+  
+  function type(currentLength) {
+    if (currentLength < currentString.length) {
+      textElement.textContent += currentString.charAt(currentLength);
+      setTimeout(() => type(currentLength + 1), typingSpeed);
+    } else {
+      setTimeout(() => erase(currentString.length), eraseDelay);
+    }
+  }
+  
+  function erase(currentLength) {
+    if (currentLength > 0) {
+      textElement.textContent = currentString.slice(0, currentLength - 1);
+      setTimeout(() => erase(currentLength - 1), eraseSpeed);
+    } else {
+      currentStringIndex++;
+      if (currentStringIndex >= strings.length) {
+        if (loop) {
+          currentStringIndex = 0;
+        } else {
+          return;
+        }
+      }
+      currentString = strings[currentStringIndex];
+      setTimeout(() => type(0), typingDelay);
+    }
+  }
+  
+  document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(() => type(0), typingDelay);
+  });
+  
+
+    </script>
+
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
@@ -603,11 +647,9 @@
         AOS.refresh();
     });
 
-    
-
-    
 </script>
 
     <script src="index.js"></script>
+    <script src="contact-slide.js" ></script>
   </body>
 </html>

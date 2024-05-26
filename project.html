@@ -138,7 +138,7 @@
         <div class="row">
           <div class="col-md-12">
             <h1  data-aos="fade-right" class="text-center my-4 fw-700 landing-header-text">
-              PROJECTS THAT TELLS ABOUT US
+             <span id="project-typing"></span>
             </h1>
 
             <div class="mt-5 d-flex align-items-center justify-content-center">
@@ -300,19 +300,25 @@
         </div>
 
         <div data-aos="fade-up" class="row gallery-row">
+         
           <div  class="column">
             <img src="images/pro1.png" onclick="openModal(this.src)" />
             <img src="images/pro2.png" onclick="openModal(this.src)" />
             <img src="images/pro3.png" onclick="openModal(this.src)" />
           </div>
           <div class="column">
-            <img src="images/pro4.png" onclick="openModal(this.src)" />
+            
             <img src="images/pro5.png" onclick="openModal(this.src)" />
             <img src="images/pro6.png" onclick="openModal(this.src)" />
             <img
               src="https://images.pexels.com/photos/2019546/pexels-photo-2019546.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
               onclick="openModal(this.src)"
             />
+          </div>
+          <div  class="column">
+            <img src="images/pro1.png" onclick="openModal(this.src)" />
+            <img src="images/pro2.png" onclick="openModal(this.src)" />
+            <img src="images/pro3.png" onclick="openModal(this.src)" />
           </div>
           <div class="column">
             <img
@@ -338,7 +344,7 @@
           </div>
         </div>
 
-        <!-- The Modal -->
+       
         <div id="myModal" class="modal">
           <span class="close">&times;</span>
           <img class="modal-content" id="modalImage" />
@@ -356,17 +362,11 @@
               <p>Take Initiative Now For Better Choice</p>
             </div>
 
-            <div class="col-md-6 connect-now-right">
-              <div data-aos="fade-left" class="common-btn-filled">
-                <a href="">
-                  <p>Contact Us</p>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="36"
-                    height="36"
-                    viewBox="0 0 36 36"
-                    fill="none"
-                  >
+            <div  data-aos="fade-left" class="col-md-6 connect-now-right">
+              <div class="common-btn-filled slidingVertical-contact">
+                <a href="#" class="animate-text">
+                  <p id="slidingText-contact">Contact Us</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
                     <path d="M15 25.5L22.5 18L15 10.5V25.5Z" fill="#FEBC2F" />
                   </svg>
                 </a>
@@ -456,6 +456,53 @@
     
 
     
+</script>
+<script src="contact-slide.js" ></script>
+
+<script>
+   var strings = ["PROJECTS THAT TELLS ABOUT US"];
+  
+  var textElement = document.getElementById("project-typing");
+  var currentStringIndex = 0;
+  var currentString = strings[currentStringIndex];
+  var typingDelay = 50; // Delay between each character typing
+ 
+  var typingSpeed = 100; // Speed of typing animation
+  var eraseSpeed = 100; // Speed of erasing animation
+  var loop = true;
+  
+  function type(currentLength) {
+    if (currentLength < currentString.length) {
+      textElement.textContent += currentString.charAt(currentLength);
+      setTimeout(() => type(currentLength + 1), typingSpeed);
+    } else {
+      setTimeout(() => erase(currentString.length), eraseDelay);
+    }
+  }
+  
+  function erase(currentLength) {
+    if (currentLength > 0) {
+      textElement.textContent = currentString.slice(0, currentLength - 1);
+      setTimeout(() => erase(currentLength - 1), eraseSpeed);
+    } else {
+      currentStringIndex++;
+      if (currentStringIndex >= strings.length) {
+        if (loop) {
+          currentStringIndex = 0;
+        } else {
+          return;
+        }
+      }
+      currentString = strings[currentStringIndex];
+      setTimeout(() => type(0), typingDelay);
+    }
+  }
+  
+  document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(() => type(0), typingDelay);
+  });
+  
+
 </script>
 
   </body>
