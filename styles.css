@@ -55,8 +55,9 @@ a {
   display: block;
 }
 
-.common-btn-filled a {
+.common-btn-filled a, .common-btn-filled .submit-btn {
   padding: 10px 20px;
+  border: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -66,7 +67,7 @@ a {
   background: linear-gradient(90deg, #272d63 0%, #4f5bc9 100%);
 }
 
-.common-btn-filled a svg {
+.common-btn-filled a svg, .common-btn-filled .submit-btn svg {
   margin-right: -10px;
 }
 
@@ -499,6 +500,7 @@ a {
 }
 .testimonials-image {
   height: 70px;
+  object-fit: cover;
   width: 70px;
   margin-right: 20px;
   border-radius: 100%;
@@ -513,7 +515,7 @@ a {
 }
 
 .feedback-section-main {
-  height: 600px;
+  height: 530px;
 }
 
 .slider-container {
@@ -536,7 +538,7 @@ a {
 
 .slider-dots {
   text-align: center;
-  margin-top: -15%;
+  top: 54px;
   float: right;
   position: absolute;
   right: 25%;
@@ -693,7 +695,7 @@ a {
   }
 
   .slider-dots {
-    margin-top: -20%;
+    top: 100px;
     margin-right: 0;
     right: 10%;
   }
@@ -722,7 +724,7 @@ a {
 
 @media screen and (max-width: 576px) {
   .slider-dots {
-    margin-top: -20%;
+    top: 50px;
     margin-right: 0;
     right: 10%;
   }
@@ -773,6 +775,7 @@ a {
 
 .testimonial-container {
   width: 100%;
+  color: #000;
   height: 330px;
   overflow: hidden;
   display: flex;
@@ -799,11 +802,26 @@ a {
   padding-left: 20px;
   padding-top: 15px;
   padding-bottom: 10px;
+  color: #000;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .testimonial-content-heading {
   padding-bottom: 20px;
   position: relative;
+  color: #000;
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+  width: 100%;
+  overflow: hidden;
+}
+
+.testimonial-content p{
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+  width: 100%;
+  overflow: hidden;
 }
 
 .testimonial-content-heading::after {
@@ -832,9 +850,11 @@ a {
 .connect-form form {
   display: flex;
   flex-direction: column;
+  gap: 35px;
+  margin-top: 10px;
 }
 
-.connect-form form input[type="text"] {
+.connect-form form input {
   border: none;
   border-bottom: 1px solid #8d8d8d;
   outline: none;
@@ -848,14 +868,21 @@ a {
   width: 100%;
   color: #8d8d8d;
 }
+.contact-form-input-group{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
 
-.connect-form form label {
-  margin-top: 50px;
+.contact-form-input-group .error{
+  color: red;
+  font-size: 14px;
 }
 
 .form-footer {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .social-link {
@@ -1502,4 +1529,15 @@ a {
   .about-home::before {
     top: 7%;
   }
+}
+
+/* modal css  */
+
+#reviewForm .error{
+  font-size: 12px;
+  color: red;
+}
+
+.modal-header .close{
+  font-size: 20px;
 }
