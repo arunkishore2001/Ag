@@ -47,15 +47,15 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
       <div class="row navigation">
         <div class="col-12 d-flex flex-row align-items-center justify-content-between">
           <div class="logo-container div-center">
-            <a href="index.html">
+            <a href="index.php">
               <img class="nav-logo" src="images/logo.png" alt="" />
             </a>
           </div>
 
           <div class="nav-control d-none d-md-block">
-            <ul class="main-nav text-decoration-none p-0 m-0 div-center">
+          <ul class="main-nav text-decoration-none p-0 m-0 div-center">
               <li class="hidenav">
-                <a href="index.html">Home <span class="nav-hover-line"></span></a>
+                <a href="index.php">Home <span class="nav-hover-line"></span></a>
               </li>
               <li class="hidenav">
                 <a href="about.html">About <span class="nav-hover-line"></span></a>
@@ -64,10 +64,10 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
                 <a href="service.html">Service <span class="nav-hover-line"></span></a>
               </li>
               <li class="hidenav active">
-                <a href="project.html">Project <span class="nav-hover-line"></span></a>
+                <a href="project.php">Project <span class="nav-hover-line"></span></a>
               </li>
               <li class="hidenav">
-                <a href="contact.html">Contact <span class="nav-hover-line"></span></a>
+                <a href="contact.php">Contact <span class="nav-hover-line"></span></a>
               </li>
             </ul>
           </div>
@@ -90,7 +90,7 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
             <nav id="main-navigation" class="nav-main">
               <ul class="menu">
                 <li class="menu__item">
-                  <a class="menu__link" href="/index.html">Home</a>
+                  <a class="menu__link" href="/index.php">Home</a>
                 </li>
                 <li class="menu__item">
                   <a class="menu__link" href="/about.html">About</a>
@@ -99,10 +99,10 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
                   <a class="menu__link" href="/service.html">Services</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="/project.html">Projects</a>
+                  <a class="menu__link" href="/project.php">Projects</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="/contact.html">Contact</a>
+                  <a class="menu__link" href="/contact.php">Contact</a>
                 </li>
               </ul>
             </nav>
@@ -117,7 +117,7 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
       <div class="row">
         <div class="col-md-12">
           <h1 data-aos="fade-right" class="text-center my-4 fw-700 landing-header-text">
-            PROJECTS THAT TELLS ABOUT US
+          <span id="project-typing"></span>
           </h1>
 
           <div class="mt-5 d-flex align-items-center justify-content-center">
@@ -258,6 +258,54 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
       AOS.refresh();
     });
   </script>
+
+<script src="contact-slide.js" ></script>
+
+<script>
+   var strings = ["PROJECTS THAT TELLS ABOUT US"];
+  
+  var textElement = document.getElementById("project-typing");
+  var currentStringIndex = 0;
+  var currentString = strings[currentStringIndex];
+  var typingDelay = 50; // Delay between each character typing
+ 
+  var typingSpeed = 100; // Speed of typing animation
+  var eraseSpeed = 100; // Speed of erasing animation
+  var loop = true;
+  
+  function type(currentLength) {
+    if (currentLength < currentString.length) {
+      textElement.textContent += currentString.charAt(currentLength);
+      setTimeout(() => type(currentLength + 1), typingSpeed);
+    } else {
+      setTimeout(() => erase(currentString.length), eraseDelay);
+    }
+  }
+  
+  function erase(currentLength) {
+    if (currentLength > 0) {
+      textElement.textContent = currentString.slice(0, currentLength - 1);
+      setTimeout(() => erase(currentLength - 1), eraseSpeed);
+    } else {
+      currentStringIndex++;
+      if (currentStringIndex >= strings.length) {
+        if (loop) {
+          currentStringIndex = 0;
+        } else {
+          return;
+        }
+      }
+      currentString = strings[currentStringIndex];
+      setTimeout(() => type(0), typingDelay);
+    }
+  }
+  
+  document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(() => type(0), typingDelay);
+  });
+  
+
+</script>
 
 </body>
 

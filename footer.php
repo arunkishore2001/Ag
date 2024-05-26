@@ -9,15 +9,14 @@
                 </div>
 
                 <div class="col-md-6 connect-now-right">
-                    <div class="common-btn-filled">
-                        <a href="">
-                            <p>Contact Us</p>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"
-                                fill="none">
-                                <path d="M15 25.5L22.5 18L15 10.5V25.5Z" fill="#FEBC2F" />
-                            </svg>
-                        </a>
-                    </div>
+                <div class="common-btn-filled slidingVertical-contact">
+                <a href="#" class="animate-text">
+                  <p id="slidingText-contact">Contact Us</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                    <path d="M15 25.5L22.5 18L15 10.5V25.5Z" fill="#FEBC2F" />
+                  </svg>
+                </a>
+              </div>
                 </div>
             </div>
         </div>
@@ -95,3 +94,4 @@
         </p>
     </div>
 </div>
+<script src="contact-slide.js" ></script>

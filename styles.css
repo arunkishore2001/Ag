@@ -5,6 +5,12 @@
   box-sizing: border-box;
 }
 
+
+body{
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 /* common css */
 
 .container-fluid {
@@ -103,7 +109,7 @@ a {
   width: 100px; /* Set initial width */
   background: #272d63;
   margin-left: 20px;
-  animation: increaseWidth 2s forwards; /* Apply animation */
+  animation: increaseWidth 2s forwards infinite;  /* Apply animation */
 }
 
 @keyframes increaseWidth {
@@ -124,6 +130,9 @@ a {
 .nav-container {
   width: 100%;
   background-color: white;
+  -webkit-box-shadow: 0px 1px 2px 0px rgb(225, 224, 224);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(225, 224, 224,1);
+  box-shadow: 0px 1px 2px 0px rgba(225, 224, 224,1);;
 }
 
 .navigation {
@@ -148,7 +157,7 @@ a {
 .navigation .nav-control a .nav-hover-line {
   width: 0;
   position: absolute;
-  background-color: heading-title-line;
+  background-color:#ED5C05;
   height: 5px;
   bottom: 0;
   opacity: 0;
@@ -160,7 +169,7 @@ a {
 }
 
 .hidenav.active a {
-  color: heading-title-line;
+  color: #ED5C05;
 }
 
 .navigation .nav-control a:hover > .nav-hover-line {
@@ -184,12 +193,16 @@ a {
 
 .home-img {
   position: relative;
+  overflow: hidden;
 }
 
 .home-img img {
   width: 100%;
   height: 100vh;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s ease;
   max-height: 800px;
 }
 
@@ -253,7 +266,7 @@ a {
 }
 
 .count {
-  color: heading-title-line;
+  color:#ED5C05;
   font-size: 36px;
   font-weight: 600;
 }
@@ -404,7 +417,7 @@ a {
 .image-box {
   width: 90px;
   height: 90px;
-  border: 5px solid heading-title-line;
+  border: 5px solid #ED5C05;
   margin-top: -134px;
   margin-left: 35%;
   position: absolute;
@@ -471,7 +484,7 @@ a {
 .testimonials-main::before {
   width: 100%;
   height: 100%;
-  background-color: heading-title-line;
+  background-color:#ED5C05;
   content: "";
   position: absolute;
   border-radius: 30px;
@@ -1174,12 +1187,29 @@ a {
   height: 500px;
 }
 
-.about-home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  height: 600px;
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pause {
+  0% {
+    transform: rotate(360deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .about-home::before {
@@ -1192,7 +1222,15 @@ a {
   height: 100px;
   width: 100px;
   z-index: -1;
+  animation: rotate 4s linear infinite; /* Adjust the duration as needed */
 }
+
+.about-home::after {
+ 
+ 
+  animation: pause 2s linear infinite; /* Adjust the duration as needed */
+}
+
 
 .first-bg-color h1 {
   color: rgba(255, 255, 255, 0.2);
@@ -1258,7 +1296,7 @@ a {
 }
 
 .about-main-content {
-  background: linear-gradient(270deg, heading-title-line 0%, #272d63 100%);
+  background: linear-gradient(270deg, #ED5C05 0%, #272d63 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

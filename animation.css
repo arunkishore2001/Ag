@@ -1,10 +1,3 @@
-.service-container .image-box {
-    transition: transform 0.5s; /* Smooth transition */
-}
-
-.service-container img:hover + .image-box {
-    transform: rotate(45deg); /* Rotate 45 degrees on hover */
-}
 
 
 /* Reusable animation class */
@@ -12,17 +5,251 @@
 
 
 @keyframes fade-in-bottom {
-    0% {
-      -webkit-transform: translateY(50px);
-      transform: translateY(50px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
-      opacity: 1;
-    }
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.service-container:hover img {
+transform: scale(1.1); 
+}
+
+.service-container img {
+width: 100%;
+max-height: 400px;
+object-fit: cover;
+transition: transform 0.3s ease; 
+}
+
+.image-white-box {
+  width: 50%;
+  height: 60px;
+  background-color: #fff;
+  position: absolute;
+  
+  transition: all 0.3s ease; 
+}
+
+.image-white-box h6 {
+  font-style: normal;
+  font-weight: 700;
+}
+
+.service-container:hover .image-white-box {
+  width: 100%; 
+  height: 80px;
+  background-color: #ED5C05; 
+  left: 0px;
+  bottom: 0;
+  
+  
+  transform: none; 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  color: #fff; 
+ 
+}
+
+.service-container:hover .image-white-box h6 {
+  color: #fff; 
+}
+
+
+.service-container {
+  margin-top: 16px;
+  position: relative;
+  overflow: hidden; 
+}
+
+.service-container:hover .image-box {
+  display: none;
+}
+
+
+.light-glow {
+  border: 4px solid transparent; 
+  border-radius: 10px; 
+  animation: borderAnimation 4s linear infinite; 
+}
+
+@keyframes borderAnimation {
+  0% {
+    border-color: transparent;
+    box-shadow: 0 0 20px rgba(237, 92, 5, 0.5); 
+  }
+  100% {
+    border-color: transparent;
+    box-shadow: 0 0 20px rgba(237, 92, 5, 0.5);
+    
+  }
+}
+
+
+/* jumping */
+
+.main-box {
+  opacity: 0; 
+  transform: scale(0.5) rotate(-10deg); 
+  animation: advancedAnimation 2s forwards; 
+}
+
+
+@keyframes advancedAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) rotate(-10deg) translateY(100px);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.1) rotate(10deg) translateY(-20px);
+  }
+  70% {
+    opacity: 1;
+    transform: scale(0.9) rotate(-5deg) translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg) translateY(0);
+  }
+}
+
+.info {
+  min-width: 400px;
+  width: 32vw;
+  max-width: 600px;
+  height: 55vh;
+  max-height: 500px;
+  border: 30px solid rgba(255, 255, 255, 0.69);
+  background: transparent;
+  margin-top: 110px;
+  margin-left: 120px;
+  padding: 14px 10px;
+  display: flex;
+  position: relative;
+}
+
+.landing-page-top-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 36px;
+  height: 30px;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.line-text {
+  color: #272d63;
+  font-weight: 700;
+}
+
+.info h3 {
+  margin-top: 130px;
+  margin-right: 60px;
+  color: #fff;
+  position: absolute;
+  font-weight: 700;
+}
+
+
+
+
+.info {
+  min-width: 400px;
+  width: 32vw;
+  max-width: 600px;
+  height: 55vh;
+  max-height: 500px;
+  border: 30px solid rgba(255, 255, 255, 0.69);
+  background: transparent;
+  margin-top: 110px;
+  margin-left: 120px;
+  padding: 14px 10px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.landing-page-top-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 36px;
+  height: 30px;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.line-text {
+  color: #272d63;
+  font-weight: 700;
+}
+
+
+@media screen and (max-width: 768px) {
+  .main-box {
+    animation: none; 
+    opacity: 1; 
+    transform: none; 
   }
 
-
   
+}
+
+
+
+
+
+/* zoom in */
+.zoom-in-effect {
+overflow: hidden; 
+}
+
+.zoom-in-effect img {
+overflow: hidden; 
+transition: transform 0.3s ease; 
+}
+
+.zoom-in-effect img:hover {
+transform: scale(1.1); 
+}
+@keyframes zoom-in-animation {
+0% {
+    transform: scale(1); 
+}
+50% {
+    transform: scale(1.1);
+}
+100% {
+    transform: scale(1); 
+}
+}
+
+
+
+.zoom-in-out-effect img {
+overflow: hidden; 
+transition: transform 0.3s ease;
+}
+
+.zoom-in-out-effect img:hover {
+transform: scale(1.2);
+}
+
+.zoom-in-out-effect img {
+transform-origin: center; 
+}
+
+.zoom-in-out-effect img:hover {
+transform: scale(0.8); 
+}
+
+

@@ -35,6 +35,7 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="animation.css">
   <link rel="stylesheet" href="navBar.css" />
+  
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/additional-methods.min.js"></script>
@@ -47,7 +48,7 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
       <div class="row navigation">
         <div class="col-12 d-flex flex-row align-items-center justify-content-between">
           <div class="logo-container div-center">
-            <a href="index.html">
+            <a href="index.php">
               <img class="nav-logo" src="images/logo.png" alt="" />
             </a>
           </div>
@@ -55,7 +56,7 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
           <div class="nav-control d-none d-md-block">
             <ul class="main-nav text-decoration-none p-0 m-0 div-center">
               <li class="hidenav active">
-                <a href="index.html">Home <span class="nav-hover-line"></span></a>
+                <a href="index.php">Home <span class="nav-hover-line"></span></a>
               </li>
               <li class="hidenav">
                 <a href="about.html">About <span class="nav-hover-line"></span></a>
@@ -64,10 +65,10 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
                 <a href="service.html">Service <span class="nav-hover-line"></span></a>
               </li>
               <li class="hidenav">
-                <a href="project.html">Project <span class="nav-hover-line"></span></a>
+                <a href="project.php">Project <span class="nav-hover-line"></span></a>
               </li>
               <li class="hidenav">
-                <a href="contact.html">Contact <span class="nav-hover-line"></span></a>
+                <a href="contact.php">Contact <span class="nav-hover-line"></span></a>
               </li>
             </ul>
           </div>
@@ -88,9 +89,9 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
             </label>
 
             <nav id="main-navigation" class="nav-main">
-              <ul class="menu">
+            <ul class="menu">
                 <li class="menu__item">
-                  <a class="menu__link" href="/index.html">Home</a>
+                  <a class="menu__link" href="/index.php">Home</a>
                 </li>
                 <li class="menu__item">
                   <a class="menu__link" href="/about.html">About</a>
@@ -99,10 +100,10 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
                   <a class="menu__link" href="/service.html">Services</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="/project.html">Projects</a>
+                  <a class="menu__link" href="/project.php">Projects</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="/contact.html">Contact</a>
+                  <a class="menu__link" href="/contact.php">Contact</a>
                 </li>
               </ul>
             </nav>
@@ -112,24 +113,31 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
     </div>
   </div>
 
-  <div data-aos="fade-up" class="container-fluid container-fluid-max landing-page">
-    <div class="row">
-      <div class="col-md-3 p-0 dev-left">
-        <div class="main-box">
-          <div class="info">
-            <div class="landing-page-top-content">
-              <div class="line" style="width: 133px; height: 3px; background: #000"></div>
-              <p class="line-text">REDEVELOPMENT</p>
+  <div data-aos="fade-up"  class="container-fluid container-fluid-max landing-page">
+      <div class="row">
+        <div class="col-md-3 p-0 dev-left">
+          <div class="main-box">
+            <div  class="info ">
+              <div class="landing-page-top-content">
+                <div
+                  class="line"
+                  style="width: 133px; height: 3px; background: #000"
+                ></div>
+                <p class="line-text">REDEVELOPMENT</p>
+              </div>
+              <h3><span id="typing"></span></h3>
             </div>
-            <h3>Crafting Ideas To Reality Builds</h3>
           </div>
         </div>
-      </div>
-      <div class="col-md-9 p-0 home-img ">
-        <img src="images/home.png" alt="" />
+        <div class="col-md-9 p-0 home-img zoom-in-effect" >
+         
+          <img  src="images/home.png" alt=""/>
+          
+        
+        </div>
+
       </div>
     </div>
-  </div>
 
   <div class="container-fluid experience-section">
     <div class="row">
@@ -159,8 +167,8 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
         </div>
       </div>
       <div class="col-md-4 d-none d-md-block">
-        <div class="screen">
-          <img data-aos="fade-up" class="" src="images/screen.png" alt="" />
+        <div class="screen zoom-in-effect">
+          <img data-aos="fade-up" class="light-glow" src="images/screen.png" alt="" />
         </div>
       </div>
     </div>
@@ -243,10 +251,10 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
 
   <div class="container-fluid experts-section mt-5 pt-xl-5">
     <div class="row pt-sm-5">
-      <div class="col-sm-5 pb-5 pb-sm-0 left-experts">
+      <div class="col-sm-5 pb-5 pb-sm-0 left-experts zoom-in-effect">
         <div data-aos="fade-left" class="left-ang-img ">
           <span class="left-experts-background">
-            <img src="images/archi.png" alt="" />
+            <img class="light-glow" src="images/archi.png" alt="" />
           </span>
         </div>
       </div>
@@ -279,8 +287,8 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
           </div>
 
           <div data-aos="fade-up" class="slidingVertical common-btn-filled mt-5">
-            <a href="" class="animate-text">
-              <span>About Us</span>
+          <a href="#" class="animate-text">
+                <span id="slidingText">About Us</span>
 
 
               <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
@@ -419,7 +427,7 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
             ?>
             <div class="carousel-item acive">
               <div class="card shadow-sm rounded-3">
-                <a class="testimonial-container" style="color:#000"
+                <a class="testimonial-container zoom-in-effect" style="color:#000"
                   href="project_page.php?project=<?php echo urlencode($projectName); ?>&image=<?php echo urlencode($imageResult['url']); ?>">
                   <?php if ($imageResult) {
                     $imageUrl = $imageResult['url']; ?>
@@ -587,7 +595,7 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
   <div class="container-fluid mt-5 pt-3">
     <div class="row py-4">
       <div class="col-md-4 d-none d-md-block">
-        <div data-aos="fade-right" class="connect-img">
+        <div data-aos="fade-right" class="connect-img light-glow">
           <img src="images/contact-img.png" alt="" />
         </div>
       </div>
@@ -976,6 +984,8 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
   </script>
 
   <script src="index.js"></script>
+  <script src="typing.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     // Initialize AOS
@@ -988,6 +998,45 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
       AOS.refresh();
     });
   </script>
+
+
+    
+<script>
+ // Array of text content to slide through
+var textArray = ["About Us", "Visit Here"];
+var currentIndex = 0;
+var slidingTextElement = document.getElementById("slidingText");
+var containerElement = document.querySelector(".slidingVertical");
+
+function slideText() {
+  currentIndex = (currentIndex + 1) % textArray.length;
+  var newText = textArray[currentIndex];
+  
+  // Slide animation: Set height to 0, change text, then expand height
+  containerElement.style.height = "0";
+  setTimeout(function() {
+    slidingTextElement.innerText = newText;
+    containerElement.style.height = slidingTextElement.scrollHeight + "px";
+  }, 500); // 500ms delay for the animation
+}
+
+// Start sliding text animation
+var slideInterval = setInterval(slideText, 1000); // Change 2000 to adjust slide interval
+
+// Stop sliding on hover
+var linkElement = document.querySelector(".animate-text");
+linkElement.addEventListener("mouseover", function() {
+  clearInterval(slideInterval);
+});
+
+// Resume sliding on mouseout
+linkElement.addEventListener("mouseout", function() {
+  slideInterval = setInterval(slideText, 1000); // Change 2000 to adjust slide interval
+});
+
+</script>
+
+<script src="contact-slide.js"></script>
 </body>
 
 </html>

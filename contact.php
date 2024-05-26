@@ -35,15 +35,15 @@
       <div class="row navigation">
         <div class="col-12 d-flex flex-row align-items-center justify-content-between">
           <div class="logo-container div-center">
-            <a href="index.html">
+            <a href="index.php">
               <img class="nav-logo" src="images/logo.png" alt="" />
             </a>
           </div>
 
           <div class="nav-control d-none d-md-block">
-            <ul class="main-nav text-decoration-none p-0 m-0 div-center">
+          <ul class="main-nav text-decoration-none p-0 m-0 div-center">
               <li class="hidenav">
-                <a href="index.html">Home <span class="nav-hover-line"></span></a>
+                <a href="index.php">Home <span class="nav-hover-line"></span></a>
               </li>
               <li class="hidenav">
                 <a href="about.html">About <span class="nav-hover-line"></span></a>
@@ -52,15 +52,15 @@
                 <a href="service.html">Service <span class="nav-hover-line"></span></a>
               </li>
               <li class="hidenav">
-                <a href="project.html">Project <span class="nav-hover-line"></span></a>
+                <a href="project.php">Project <span class="nav-hover-line"></span></a>
               </li>
               <li class="hidenav active">
-                <a href="contact.html">Contact <span class="nav-hover-line"></span></a>
+                <a href="contact.php">Contact <span class="nav-hover-line"></span></a>
               </li>
             </ul>
           </div>
 
-          <div class="contact-hide common-btn-filled d-none d-md-block">
+          <div data-aos="fade-left"  class="contact-hide common-btn-filled d-none d-md-block">
             <a href="">
               <p>Contact Us</p>
               <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
@@ -76,9 +76,9 @@
             </label>
 
             <nav id="main-navigation" class="nav-main">
-              <ul class="menu">
+            <ul class="menu">
                 <li class="menu__item">
-                  <a class="menu__link" href="/index.html">Home</a>
+                  <a class="menu__link" href="/index.php">Home</a>
                 </li>
                 <li class="menu__item">
                   <a class="menu__link" href="/about.html">About</a>
@@ -87,10 +87,10 @@
                   <a class="menu__link" href="/service.html">Services</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="/project.html">Projects</a>
+                  <a class="menu__link" href="/project.php">Projects</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="/contact.html">Contact</a>
+                  <a class="menu__link" href="/contact.php">Contact</a>
                 </li>
               </ul>
             </nav>
@@ -105,7 +105,7 @@
       <div class="row">
         <div class="col-md-12">
           <h1 data-aos="fade-right" class="text-center my-4 fw-700 landing-header-text">
-            LET'S CONNECT TOGETHER
+          <span id="contact-typing"></span>
           </h1>
 
           <div class="mt-5 d-flex align-items-center justify-content-center">
@@ -274,14 +274,14 @@
           </div>
 
           <div class="col-md-6 connect-now-right">
-            <div data-aos="fade-left" class="common-btn-filled">
-              <a href="">
-                <p>Contact Us</p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-                  <path d="M15 25.5L22.5 18L15 10.5V25.5Z" fill="#FEBC2F" />
-                </svg>
-              </a>
-            </div>
+          <div class="common-btn-filled slidingVertical-contact">
+                <a href="#" class="animate-text">
+                  <p id="slidingText-contact">Contact Us</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                    <path d="M15 25.5L22.5 18L15 10.5V25.5Z" fill="#FEBC2F" />
+                  </svg>
+                </a>
+              </div>
           </div>
         </div>
       </div>
@@ -440,6 +440,53 @@
       AOS.refresh();
     });
   </script>
+  
+  <script>
+     var strings = ["LET'S CONNECT TOGETHER"];
+  
+  var textElement = document.getElementById("contact-typing");
+  var currentStringIndex = 0;
+  var currentString = strings[currentStringIndex];
+  var typingDelay = 50; // Delay between each character typing
+ 
+  var typingSpeed = 100; // Speed of typing animation
+  var eraseSpeed = 100; // Speed of erasing animation
+  var loop = true;
+  
+  function type(currentLength) {
+    if (currentLength < currentString.length) {
+      textElement.textContent += currentString.charAt(currentLength);
+      setTimeout(() => type(currentLength + 1), typingSpeed);
+    } else {
+      setTimeout(() => erase(currentString.length), eraseDelay);
+    }
+  }
+  
+  function erase(currentLength) {
+    if (currentLength > 0) {
+      textElement.textContent = currentString.slice(0, currentLength - 1);
+      setTimeout(() => erase(currentLength - 1), eraseSpeed);
+    } else {
+      currentStringIndex++;
+      if (currentStringIndex >= strings.length) {
+        if (loop) {
+          currentStringIndex = 0;
+        } else {
+          return;
+        }
+      }
+      currentString = strings[currentStringIndex];
+      setTimeout(() => type(0), typingDelay);
+    }
+  }
+  
+  document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(() => type(0), typingDelay);
+  });
+  
+
+  </script>
+  <script src="contact-slide.js" ></script>
 </body>
 
 </html>

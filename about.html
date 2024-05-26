@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="about.css" />
     <link rel="stylesheet" href="navBar.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="animation.css">
   </head>
   <body>
     <div class="nav-container sticky-top">
@@ -45,42 +46,32 @@
             class="col-12 d-flex flex-row align-items-center justify-content-between"
           >
             <div class="logo-container div-center">
-              <a href="index.html">
+              <a href="index.php">
                 <img class="nav-logo" src="images/logo.png" alt="" />
               </a>
             </div>
 
             <div class="nav-control d-none d-md-block">
               <ul class="main-nav text-decoration-none p-0 m-0 div-center">
-                <li class="hidenav">
-                  <a href="index.html"
-                    >Home <span class="nav-hover-line"></span
-                  ></a>
+                <li class="hidenav ">
+                  <a href="index.php">Home <span class="nav-hover-line"></span></a>
                 </li>
                 <li class="hidenav active">
-                  <a href="about.html"
-                    >About <span class="nav-hover-line"></span
-                  ></a>
+                  <a href="about.html">About <span class="nav-hover-line"></span></a>
                 </li>
                 <li class="hidenav">
-                  <a href="service.html"
-                    >Service <span class="nav-hover-line"></span
-                  ></a>
+                  <a href="service.html">Service <span class="nav-hover-line"></span></a>
                 </li>
                 <li class="hidenav">
-                  <a href="project.html"
-                    >Project <span class="nav-hover-line"></span
-                  ></a>
+                  <a href="project.php">Project <span class="nav-hover-line"></span></a>
                 </li>
                 <li class="hidenav">
-                  <a href="contact.html"
-                    >Contact <span class="nav-hover-line"></span
-                  ></a>
+                  <a href="contact.php">Contact <span class="nav-hover-line"></span></a>
                 </li>
               </ul>
             </div>
 
-            <div class="contact-hide common-btn-filled d-none d-md-block">
+            <div data-aos="fade-left"  class="contact-hide common-btn-filled d-none d-md-block">
               <a href="">
                 <p>Contact Us</p>
                 <svg
@@ -109,7 +100,7 @@
               <nav id="main-navigation" class="nav-main">
                 <ul class="menu">
                   <li class="menu__item">
-                    <a class="menu__link" href="/index.html">Home</a>
+                    <a class="menu__link" href="/index.php">Home</a>
                   </li>
                   <li class="menu__item">
                     <a class="menu__link" href="/about.html">About</a>
@@ -118,10 +109,10 @@
                     <a class="menu__link" href="/service.html">Services</a>
                   </li>
                   <li class="menu__item">
-                    <a class="menu__link" href="/project.html">Projects</a>
+                    <a class="menu__link" href="/project.php">Projects</a>
                   </li>
                   <li class="menu__item">
-                    <a class="menu__link" href="/contact.html">Contact</a>
+                    <a class="menu__link" href="/contact.php">Contact</a>
                   </li>
                 </ul>
               </nav>
@@ -136,7 +127,7 @@
         <div class="row">
           <div class="col-md-12">
             <h1 data-aos="fade-right" class="text-center my-4 fw-700 landing-header-text">
-              We Create Dreams With Beans
+              <span id="about-typing"></span>
             </h1>
 
             <div class="mt-5 d-flex align-items-center justify-content-center">
@@ -273,10 +264,10 @@
         <div class="row">
           <div class="col-md-6 mission order-1 order-md-0">
             <div data-aos="fade-up" class="mission1-img">
-              <img src="images/mission1 (1).png" alt="" />
+              <img class="light-glow" src="images/mission1 (1).png" alt="" />
             </div>
             <div data-aos="fade-down" class="mission2-img">
-              <img src="images/mission2.png" alt="" />
+              <img class="light-glow "  src="images/mission2.png" alt="" />
             </div>
           </div>
 
@@ -352,7 +343,7 @@
 
           <div class="col-md-6 order-1 order-md-1 mission">
             <div data-aos="fade-left" class="vission-img">
-              <img src="images/vission-img.png" alt="" />
+              <img class="light-glow" src="images/vission-img.png" alt="" />
             </div>
           </div>
         </div>
@@ -606,6 +597,52 @@
     
 
     
+</script>
+<script>
+      
+  var strings = ["We Create Dreams With Beans"];
+
+var textElement = document.getElementById("about-typing");
+var currentStringIndex = 0;
+var currentString = strings[currentStringIndex];
+var typingDelay = 50; // Delay between each character typing
+
+var typingSpeed = 100; // Speed of typing animation
+var eraseSpeed = 100; // Speed of erasing animation
+var loop = true;
+
+function type(currentLength) {
+if (currentLength < currentString.length) {
+  textElement.textContent += currentString.charAt(currentLength);
+  setTimeout(() => type(currentLength + 1), typingSpeed);
+} else {
+  setTimeout(() => erase(currentString.length), eraseDelay);
+}
+}
+
+function erase(currentLength) {
+if (currentLength > 0) {
+  textElement.textContent = currentString.slice(0, currentLength - 1);
+  setTimeout(() => erase(currentLength - 1), eraseSpeed);
+} else {
+  currentStringIndex++;
+  if (currentStringIndex >= strings.length) {
+    if (loop) {
+      currentStringIndex = 0;
+    } else {
+      return;
+    }
+  }
+  currentString = strings[currentStringIndex];
+  setTimeout(() => type(0), typingDelay);
+}
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+setTimeout(() => type(0), typingDelay);
+});
+
+
 </script>
 
     <script src="index.js"></script>

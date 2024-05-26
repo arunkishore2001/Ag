@@ -10,7 +10,7 @@ function isLoggedIn() {
 
 function requireLogin() {
     if (!isLoggedIn()) {
-        redirectTo('login.php');
+        redirectTo('./admin_php/login.php');
     }
 }
 ?>
