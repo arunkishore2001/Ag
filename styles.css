@@ -5,8 +5,7 @@
   box-sizing: border-box;
 }
 
-
-body{
+body {
   width: 100vw;
   overflow-x: hidden;
 }
@@ -20,6 +19,7 @@ body{
 @media (max-width: 576px) {
   .container-fluid {
     max-width: 95%;
+    overflow-x: hidden;
   }
 }
 
@@ -61,7 +61,8 @@ a {
   display: block;
 }
 
-.common-btn-filled a, .common-btn-filled .submit-btn {
+.common-btn-filled a,
+.common-btn-filled .submit-btn {
   padding: 10px 20px;
   border: 0;
   display: flex;
@@ -73,7 +74,8 @@ a {
   background: linear-gradient(90deg, #272d63 0%, #4f5bc9 100%);
 }
 
-.common-btn-filled a svg, .common-btn-filled .submit-btn svg {
+.common-btn-filled a svg,
+.common-btn-filled .submit-btn svg {
   margin-right: -10px;
   margin-top: -5px;
 }
@@ -107,11 +109,11 @@ a {
   display: block;
   height: 3px;
   max-width: 120px;
-  
+
   width: 100px; /* Set initial width */
   background: #272d63;
   margin-left: 20px;
-  animation: increaseWidth 2s forwards infinite;  /* Apply animation */
+  animation: increaseWidth 2s forwards infinite; /* Apply animation */
 }
 
 @keyframes increaseWidth {
@@ -133,8 +135,8 @@ a {
   width: 100%;
   background-color: white;
   -webkit-box-shadow: 0px 1px 2px 0px rgb(225, 224, 224);
-  -moz-box-shadow: 0px 1px 2px 0px rgba(225, 224, 224,1);
-  box-shadow: 0px 1px 2px 0px rgba(225, 224, 224,1);;
+  -moz-box-shadow: 0px 1px 2px 0px rgba(225, 224, 224, 1);
+  box-shadow: 0px 1px 2px 0px rgba(225, 224, 224, 1);
 }
 
 .navigation {
@@ -159,7 +161,7 @@ a {
 .navigation .nav-control a .nav-hover-line {
   width: 0;
   position: absolute;
-  background-color:#ED5C05;
+  background-color: #ed5c05;
   height: 5px;
   bottom: 0;
   opacity: 0;
@@ -171,7 +173,7 @@ a {
 }
 
 .hidenav.active a {
-  color: #ED5C05;
+  color: #ed5c05;
 }
 
 .navigation .nav-control a:hover > .nav-hover-line {
@@ -259,7 +261,6 @@ a {
   border: 7px solid #272d63;
 }
 
-
 .duo {
   display: flex;
   gap: 20px;
@@ -268,7 +269,7 @@ a {
 }
 
 .count {
-  color:#ED5C05;
+  color: #ed5c05;
   font-size: 36px;
   font-weight: 600;
 }
@@ -419,7 +420,7 @@ a {
 .image-box {
   width: 90px;
   height: 90px;
-  border: 5px solid #ED5C05;
+  border: 5px solid #ed5c05;
   margin-top: -134px;
   margin-left: 35%;
   position: absolute;
@@ -486,7 +487,7 @@ a {
 .testimonials-main::before {
   width: 100%;
   height: 100%;
-  background-color:#ED5C05;
+  background-color: #ed5c05;
   content: "";
   position: absolute;
   border-radius: 30px;
@@ -832,7 +833,7 @@ a {
   overflow: hidden;
 }
 
-.testimonial-content p{
+.testimonial-content p {
   text-overflow: ellipsis;
   text-wrap: nowrap;
   width: 100%;
@@ -883,13 +884,13 @@ a {
   width: 100%;
   color: #8d8d8d;
 }
-.contact-form-input-group{
+.contact-form-input-group {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
-.contact-form-input-group .error{
+.contact-form-input-group .error {
   color: red;
   font-size: 14px;
 }
@@ -1190,7 +1191,6 @@ a {
   margin-top: 40px;
 }
 
-
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
@@ -1229,11 +1229,8 @@ a {
 }
 
 .about-home::after {
- 
- 
   animation: pause 2s linear infinite; /* Adjust the duration as needed */
 }
-
 
 .first-bg-color h1 {
   color: rgba(255, 255, 255, 0.2);
@@ -1299,7 +1296,7 @@ a {
 }
 
 .about-main-content {
-  background: linear-gradient(270deg, #ED5C05 0%, #272d63 100%);
+  background: linear-gradient(270deg, #ed5c05 0%, #272d63 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1368,12 +1365,12 @@ a {
   right: 10px;
 }
 
-@media (max-width: 576px){
-  .process-idea .process{
+@media (max-width: 576px) {
+  .process-idea .process {
     width: 100%;
   }
 
-  .process-sec h1{
+  .process-sec h1 {
     font-size: 60px;
   }
 }
@@ -1574,11 +1571,11 @@ a {
 
 /* modal css  */
 
-#reviewForm .error{
+#reviewForm .error {
   font-size: 12px;
   color: red;
 }
 
-.modal-header .close{
+.modal-header .close {
   font-size: 20px;
 }
