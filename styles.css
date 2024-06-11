@@ -90,6 +90,8 @@ a {
 .heading-title-icon {
   margin-right: 20px;
   margin-top: -5px;
+  display: flex;
+  align-items: center;
 }
 
 .heading-title-icon img {
@@ -1110,7 +1112,7 @@ a {
   margin-top: -250px;
   background: #272d63;
   width: 100%;
-  max-height: 550px;
+  max-height: 600px;
   height: 600px;
   display: flex;
   justify-content: flex-end;
@@ -1270,6 +1272,15 @@ a {
 
 .meet-member {
   padding-bottom: 30px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.meet-member img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
 }
 
 .mission1-img {
@@ -1537,13 +1548,13 @@ a {
   .first-bg-color {
     margin-top: 0;
     justify-content: center;
+    max-height: 500px;
   }
   .common-landing-opener {
     width: 95%;
   }
   .about-home {
-    height: 450px;
-    padding-top: 100px;
+    padding-top: 20px;
   }
   .about-home img {
     height: 450px;

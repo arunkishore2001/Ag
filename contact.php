@@ -27,7 +27,7 @@
   <link rel="stylesheet" href="animation.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/additional-methods.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/additional-methods.min.js"></script>
 </head>
 
 <body>
@@ -42,7 +42,7 @@
           </div>
 
           <div class="nav-control d-none d-md-block">
-          <ul class="main-nav text-decoration-none p-0 m-0 div-center">
+            <ul class="main-nav text-decoration-none p-0 m-0 div-center">
               <li class="hidenav">
                 <a href="index.php">Home <span class="nav-hover-line"></span></a>
               </li>
@@ -61,19 +61,7 @@
             </ul>
           </div>
 
-          <div data-aos="fade-left"  class="contact-hide common-btn-filled d-none d-md-block">
-            <a href="">
-            <div class="words">
-                  <p >
-                    <span>Connect US</span>
-                    <span>Today</span>
-                    
-                  </p>
-                </div>
-              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-                <path d="M15 25.5L22.5 18L15 10.5V25.5Z" fill="#FEBC2F" />
-              </svg>
-            </a>
+          <div data-aos="fade-left" class="contact-hide common-btn-filled d-none d-md-block">
           </div>
 
           <div class="mobile-nav d-md-none">
@@ -83,21 +71,21 @@
             </label>
 
             <nav id="main-navigation" class="nav-main">
-            <ul class="menu">
+              <ul class="menu">
                 <li class="menu__item">
-                  <a class="menu__link" href="/index.php">Home</a>
+                  <a class="menu__link" href="index.php">Home</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="/about.html">About</a>
+                  <a class="menu__link" href="about.html">About</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="/service.html">Services</a>
+                  <a class="menu__link" href="service.html">Services</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="/project.php">Projects</a>
+                  <a class="menu__link" href="project.php">Projects</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="/contact.php">Contact</a>
+                  <a class="menu__link" href="contact.php">Contact</a>
                 </li>
               </ul>
             </nav>
@@ -112,7 +100,7 @@
       <div class="row">
         <div class="col-md-12">
           <h1 data-aos="fade-right" class="text-center my-4 fw-700 landing-header-text">
-          <span id="contact-typing"></span>
+            <span id="contact-typing"></span>
           </h1>
 
           <div class="mt-5 d-flex align-items-center justify-content-center">
@@ -145,11 +133,9 @@
         <div class="col-md-6">
           <div data-aos="fade-left" class="contact-landing-para">
             <p class="white">
-              AG Creations is a dynamic and innovative construction company,
-              established in the year 2022, to redefine the landscape of the
-              construction industry. With a forward-thinking approach, we
-              specialize in delivering high-quality construction projects that
-              meet the evolving needs of our clien
+              At AG , we believe in building strong relationships with our clients, partners, and community. Whether
+              you're interested in our agricultural services, have a question, or need expert advice, we’re here to
+              help. Reach out to us today and let's grow together!
             </p>
           </div>
         </div>
@@ -203,10 +189,10 @@
               <div class="form-footer">
                 <div class="common-btn-filled connect-btn">
                   <button type="submit" class="submit-btn">
-                      <p>Submit</p>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-                        <path d="M15 25.5L22.5 18L15 10.5V25.5Z" fill="#FEBC2F" />
-                      </svg>
+                    <p>Submit</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                      <path d="M15 25.5L22.5 18L15 10.5V25.5Z" fill="#FEBC2F" />
+                    </svg>
                   </button>
                 </div>
 
@@ -281,20 +267,20 @@
           </div>
 
           <div class="col-md-6 connect-now-right">
-          <div class="common-btn-filled slidingVertical-contact">
-                <a href="#" class="animate-text">
+            <div class="common-btn-filled slidingVertical-contact">
+              <a href="#" class="animate-text">
                 <div class="words">
-                  <p >
+                  <p>
                     <span>Connect US</span>
                     <span>Today</span>
-                    
+
                   </p>
                 </div>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-                    <path d="M15 25.5L22.5 18L15 10.5V25.5Z" fill="#FEBC2F" />
-                  </svg>
-                </a>
-              </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                  <path d="M15 25.5L22.5 18L15 10.5V25.5Z" fill="#FEBC2F" />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -453,50 +439,50 @@
       AOS.refresh();
     });
   </script>
-  
+
   <script>
-     var strings = ["LET'S CONNECT TOGETHER"];
-  
-  var textElement = document.getElementById("contact-typing");
-  var currentStringIndex = 0;
-  var currentString = strings[currentStringIndex];
-  var typingDelay = 50; // Delay between each character typing
- 
-  var typingSpeed = 100; // Speed of typing animation
-  var eraseSpeed = 100; // Speed of erasing animation
-  var loop = true;
-  
-  function type(currentLength) {
-    if (currentLength < currentString.length) {
-      textElement.textContent += currentString.charAt(currentLength);
-      setTimeout(() => type(currentLength + 1), typingSpeed);
-    } else {
-      setTimeout(() => erase(currentString.length), eraseDelay);
-    }
-  }
-  
-  function erase(currentLength) {
-    if (currentLength > 0) {
-      textElement.textContent = currentString.slice(0, currentLength - 1);
-      setTimeout(() => erase(currentLength - 1), eraseSpeed);
-    } else {
-      currentStringIndex++;
-      if (currentStringIndex >= strings.length) {
-        if (loop) {
-          currentStringIndex = 0;
-        } else {
-          return;
-        }
+    var strings = ["LET'S CONNECT TOGETHER"];
+
+    var textElement = document.getElementById("contact-typing");
+    var currentStringIndex = 0;
+    var currentString = strings[currentStringIndex];
+    var typingDelay = 50; // Delay between each character typing
+
+    var typingSpeed = 100; // Speed of typing animation
+    var eraseSpeed = 100; // Speed of erasing animation
+    var loop = true;
+
+    function type(currentLength) {
+      if (currentLength < currentString.length) {
+        textElement.textContent += currentString.charAt(currentLength);
+        setTimeout(() => type(currentLength + 1), typingSpeed);
+      } else {
+        setTimeout(() => erase(currentString.length), eraseDelay);
       }
-      currentString = strings[currentStringIndex];
-      setTimeout(() => type(0), typingDelay);
     }
-  }
-  
-  document.addEventListener("DOMContentLoaded", function() {
-    setTimeout(() => type(0), typingDelay);
-  });
-  
+
+    function erase(currentLength) {
+      if (currentLength > 0) {
+        textElement.textContent = currentString.slice(0, currentLength - 1);
+        setTimeout(() => erase(currentLength - 1), eraseSpeed);
+      } else {
+        currentStringIndex++;
+        if (currentStringIndex >= strings.length) {
+          if (loop) {
+            currentStringIndex = 0;
+          } else {
+            return;
+          }
+        }
+        currentString = strings[currentStringIndex];
+        setTimeout(() => type(0), typingDelay);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      setTimeout(() => type(0), typingDelay);
+    });
+
 
   </script>
 

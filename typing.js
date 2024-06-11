@@ -1,13 +1,13 @@
 var strings = [
-    "Crafting Ideas To Reality Builds", "Dint of building well, you get to be a good architect" ];
+    "Creating Dreams With Beams", "Trust Us To Deliver Superior Results, Every Time" ];
   
   var textElement = document.getElementById("typing");
   var currentStringIndex = 0;
   var currentString = strings[currentStringIndex];
-  var typingDelay = 100; 
-  var eraseDelay = 600; 
-  var typingSpeed = 200; 
-  var eraseSpeed = 100;
+  var typingDelay = 50; 
+  var eraseDelay = 1500; 
+  var typingSpeed = 300; 
+  var eraseSpeed = 10;
   var loop = true;
   
   function type() {

@@ -53,7 +53,7 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
           </div>
 
           <div class="nav-control d-none d-md-block">
-          <ul class="main-nav text-decoration-none p-0 m-0 div-center">
+            <ul class="main-nav text-decoration-none p-0 m-0 div-center">
               <li class="hidenav">
                 <a href="index.php">Home <span class="nav-hover-line"></span></a>
               </li>
@@ -73,18 +73,6 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
           </div>
 
           <div class="contact-hide common-btn-filled d-none d-md-block">
-            <a href="">
-            <div class="words">
-                  <p >
-                    <span>Connect US</span>
-                    <span>Today</span>
-                    
-                  </p>
-                </div>
-              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-                <path d="M15 25.5L22.5 18L15 10.5V25.5Z" fill="#FEBC2F" />
-              </svg>
-            </a>
           </div>
 
           <div class="mobile-nav d-md-none">
@@ -96,19 +84,19 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
             <nav id="main-navigation" class="nav-main">
               <ul class="menu">
                 <li class="menu__item">
-                  <a class="menu__link" href="/index.php">Home</a>
+                  <a class="menu__link" href="index.php">Home</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="/about.html">About</a>
+                  <a class="menu__link" href="about.html">About</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="/service.html">Services</a>
+                  <a class="menu__link" href="service.html">Services</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="/project.php">Projects</a>
+                  <a class="menu__link" href="project.php">Projects</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="/contact.php">Contact</a>
+                  <a class="menu__link" href="contact.php">Contact</a>
                 </li>
               </ul>
             </nav>
@@ -123,7 +111,7 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
       <div class="row">
         <div class="col-md-12">
           <h1 data-aos="fade-right" class="text-center my-4 fw-700 landing-header-text">
-          <span id="project-typing"></span>
+            <span id="project-typing"></span>
           </h1>
 
           <div class="mt-5 d-flex align-items-center justify-content-center">
@@ -156,11 +144,9 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
         <div class="col-md-6">
           <div data-aos="fade-left" class="contact-landing-para">
             <p class="white">
-              AG Creations is a dynamic and innovative construction company,
-              established in the year 2022, to redefine the landscape of the
-              construction industry. With a forward-thinking approach, we
-              specialize in delivering high-quality construction projects that
-              meet the evolving needs of our clien
+              At AG, we have a proud history of delivering high-quality construction projects that meet and exceed our
+              clients' expectations. Our portfolio spans a wide range of sectors, showcasing our versatility and
+              commitment to excellence. Here are some of our most notable construction projects.
             </p>
           </div>
         </div>
@@ -234,7 +220,8 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
         <section id="commercial-gallery" class="main-gallery my-5">
           <div id="gallery" class="container-lg">
             <?php foreach ($allImages as $image): ?>
-              <img data-aos="fade-up" onclick="openModal(this.src)" loading="lazy" src="<?php echo $image['url']; ?>" class="img-responsive" alt="Image">
+              <img data-aos="fade-up" onclick="openModal(this.src)" loading="lazy" src="<?php echo $image['url']; ?>"
+                class="img-responsive" alt="Image">
             <?php endforeach; ?>
           </div>
         </section>
@@ -267,51 +254,51 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
 
 
 
-<script>
-   var strings = ["PROJECTS THAT TELLS ABOUT US"];
-  
-  var textElement = document.getElementById("project-typing");
-  var currentStringIndex = 0;
-  var currentString = strings[currentStringIndex];
-  var typingDelay = 50; // Delay between each character typing
- 
-  var typingSpeed = 100; // Speed of typing animation
-  var eraseSpeed = 100; // Speed of erasing animation
-  var loop = true;
-  
-  function type(currentLength) {
-    if (currentLength < currentString.length) {
-      textElement.textContent += currentString.charAt(currentLength);
-      setTimeout(() => type(currentLength + 1), typingSpeed);
-    } else {
-      setTimeout(() => erase(currentString.length), eraseDelay);
-    }
-  }
-  
-  function erase(currentLength) {
-    if (currentLength > 0) {
-      textElement.textContent = currentString.slice(0, currentLength - 1);
-      setTimeout(() => erase(currentLength - 1), eraseSpeed);
-    } else {
-      currentStringIndex++;
-      if (currentStringIndex >= strings.length) {
-        if (loop) {
-          currentStringIndex = 0;
-        } else {
-          return;
-        }
-      }
-      currentString = strings[currentStringIndex];
-      setTimeout(() => type(0), typingDelay);
-    }
-  }
-  
-  document.addEventListener("DOMContentLoaded", function() {
-    setTimeout(() => type(0), typingDelay);
-  });
-  
+  <script>
+    var strings = ["PROJECTS THAT TELLS ABOUT US"];
 
-</script>
+    var textElement = document.getElementById("project-typing");
+    var currentStringIndex = 0;
+    var currentString = strings[currentStringIndex];
+    var typingDelay = 50; // Delay between each character typing
+
+    var typingSpeed = 100; // Speed of typing animation
+    var eraseSpeed = 100; // Speed of erasing animation
+    var loop = true;
+
+    function type(currentLength) {
+      if (currentLength < currentString.length) {
+        textElement.textContent += currentString.charAt(currentLength);
+        setTimeout(() => type(currentLength + 1), typingSpeed);
+      } else {
+        setTimeout(() => erase(currentString.length), eraseDelay);
+      }
+    }
+
+    function erase(currentLength) {
+      if (currentLength > 0) {
+        textElement.textContent = currentString.slice(0, currentLength - 1);
+        setTimeout(() => erase(currentLength - 1), eraseSpeed);
+      } else {
+        currentStringIndex++;
+        if (currentStringIndex >= strings.length) {
+          if (loop) {
+            currentStringIndex = 0;
+          } else {
+            return;
+          }
+        }
+        currentString = strings[currentStringIndex];
+        setTimeout(() => type(0), typingDelay);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      setTimeout(() => type(0), typingDelay);
+    });
+
+
+  </script>
 
 </body>
 

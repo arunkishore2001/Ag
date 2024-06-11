@@ -13,7 +13,7 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>AG Creations</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -31,11 +31,8 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <link rel="stylesheet" href="animation.css">
   <link rel="stylesheet" href="navBar.css" />
-  
+  <link rel="stylesheet" href="animation.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/additional-methods.min.js"></script>
@@ -74,18 +71,6 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
           </div>
 
           <div class="contact-hide common-btn-filled d-none d-md-block">
-            <a href="">
-            <div class="words">
-                  <p >
-                    <span>Connect US</span>
-                    <span>Today</span>
-                    
-                  </p>
-                </div>
-              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-                <path d="M15 25.5L22.5 18L15 10.5V25.5Z" fill="#FEBC2F" />
-              </svg>
-            </a>
           </div>
 
           <div class="mobile-nav d-md-none">
@@ -95,21 +80,21 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
             </label>
 
             <nav id="main-navigation" class="nav-main">
-            <ul class="menu">
+              <ul class="menu">
                 <li class="menu__item">
-                  <a class="menu__link" href="/index.php">Home</a>
+                  <a class="menu__link" href="index.php">Home</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="/about.html">About</a>
+                  <a class="menu__link" href="about.html">About</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="/service.html">Services</a>
+                  <a class="menu__link" href="service.html">Services</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="/project.php">Projects</a>
+                  <a class="menu__link" href="project.php">Projects</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="/contact.php">Contact</a>
+                  <a class="menu__link" href="contact.php">Contact</a>
                 </li>
               </ul>
             </nav>
@@ -119,31 +104,28 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
     </div>
   </div>
 
-  <div data-aos="fade-up"  class="container-fluid container-fluid-max landing-page">
-      <div class="row">
-        <div class="col-md-3 p-0 dev-left">
-          <div class="main-box">
-            <div  class="info ">
-              <div class="landing-page-top-content">
-                <div
-                  class="line"
-                  style="width: 133px; height: 3px; background: #000"
-                ></div>
-                <p class="line-text">REDEVELOPMENT</p>
-              </div>
-              <h3><span id="typing"></span></h3>
+  <div data-aos="fade-up" class="container-fluid container-fluid-max landing-page">
+    <div class="row">
+      <div class="col-md-3 p-0 dev-left">
+        <div class="main-box">
+          <div class="info ">
+            <div class="landing-page-top-content">
+              <div class="line" style="width: 133px; height: 3px; background: #000"></div>
+              <p class="line-text">REDEVELOPMENT</p>
             </div>
+            <h3><span id="typing"></span></h3>
           </div>
         </div>
-        <div class="col-md-9 p-0 home-img zoom-in-effect" >
-         
-          <img  src="images/home.png" alt=""/>
-          
-        
-        </div>
+      </div>
+      <div class="col-md-9 p-0 home-img zoom-in-effect">
+
+        <img src="images/home.png" alt="" />
+
 
       </div>
+
     </div>
+  </div>
 
   <div class="container-fluid experience-section">
     <div class="row">
@@ -159,22 +141,10 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
             <h4 class="experience-heading">EXPERIENCE</h4>
           </div>
         </div>
-
-        <div data-aos="fade-left" class="col duo ms-md-3">
-          <div class="experience2">
-            <h2 id="count2" class="text-center count d-flex justify-content-center py-3">
-              <span id="countValue2">0</span>+
-            </h2>
-          </div>
-          <div class="year">
-            <p class="experience-sub-heading">Successful</p>
-            <h4 class="experience-heading">PROJECTS</h4>
-          </div>
-        </div>
       </div>
       <div class="col-md-4 d-none d-md-block">
         <div class="screen zoom-in-effect">
-          <img data-aos="fade-up" class="light-glow" src="images/screen.png" alt="" />
+          <img data-aos="fade-up" class="" src="images/screen.png" alt="" />
         </div>
       </div>
     </div>
@@ -205,9 +175,8 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
             </div>
             <div class="benefits-content">
               <h6 class="benefits-content-heading">Open Communication</h6>
-              <p>
-                1Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et velit interdum, ashku
+              <p>Experience seamless project delivery with our construction company’s open communication. We ensure
+                transparency and efficiency at every stage.
               </p>
             </div>
           </div>
@@ -218,10 +187,9 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
             </div>
             <div class="benefits-content">
               <h6 class="benefits-content-heading">Client-Centric</h6>
-              <p>
-                Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et velit interdum, ashku
-              </p>
+              <p>Transform your vision into reality with our client-centric construction services. Our expert team
+                delivers quality craftsmanship, on time and within budget. Trust us to build your dreams, one brick at a
+                time.</p>
             </div>
           </div>
 
@@ -231,9 +199,8 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
             </div>
             <div class="benefits-content">
               <h6 class="benefits-content-heading">Budget Friendly</h6>
-              <p>
-                2Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et velit interdum, ashku
+              <p>Looking for high-quality construction services on a budget? Our expert team delivers exceptional
+                results without breaking the bank.
               </p>
             </div>
           </div>
@@ -244,9 +211,8 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
             </div>
             <div class="benefits-content">
               <h6 class="benefits-content-heading">Exceed Expectation</h6>
-              <p>
-                1Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et velit interdum, ashku
+              <p>Trust us to bring your vision to life with precision and excellence. Contact us today for your next
+                project!
               </p>
             </div>
           </div>
@@ -282,25 +248,23 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
 
           <div class="angle-para mt-4">
             <p data-aos="fade-up" class="para-left">
-              Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              vulputate libero et velit interdum, ac aliquet odio mattis.
+              Build with confidence. We are AG Construction. Your trusted experts in crafting quality structures.
             </p>
             <p data-aos="fade-up" class="para-sec mt-4">
-              Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              vulputate libero et velit interdum, ac aliquet odio mattis.Rorem
-              ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputa
+              From concept to completion, our team delivers excellence in every project. Discover reliability,
+              precision, and innovation with us.
             </p>
           </div>
 
           <div data-aos="fade-up" class="slidingVertical common-btn-filled mt-5">
-          <a href="#" class="animate-text">
-          <div class="words">
-                  <p >
-                    <span>About US</span>
-                    <span>See</span>
-                    
-                  </p>
-                </div>
+            <a href="#" class="animate-text">
+              <div class="words">
+                <p>
+                  <span>About US</span>
+                  <span>View</span>
+
+                </p>
+              </div>
 
 
               <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
@@ -343,9 +307,9 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
             </svg>
           </div>
           <p data-aos="fade-left">
-            Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            vulputate libero et velit interdum, ac aliquet odio mattis.Rorem
-            ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputa
+            Welcome to AG Construction, where excellence meets innovation in every project. With our expert team and
+            dedication to quality, we deliver superior construction solutions tailored to your needs. From renovations
+            to new builds. Contact us today to embark on your next construction journey with confidence.
           </p>
         </div>
       </div>
@@ -356,7 +320,7 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
         <img class="image1" src="images/service2.png" alt="" />
         <div class="image-box"></div>
         <div class="image-white-box d-flex justify-content-center align-items-center">
-          <h6>COMMERCIAL</h6>
+          <h6>RESIDENTIAL</h6>
         </div>
       </div>
 
@@ -372,7 +336,7 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
         <img class="image1" src="images/service2.png" alt="" />
         <div class="image-box"></div>
         <div class="image-white-box d-flex justify-content-center align-items-center">
-          <h6>COMMERCIAL</h6>
+          <h6>SUSTAINABLE</h6>
         </div>
       </div>
 
@@ -380,7 +344,7 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
         <img class="image1" src="images/service2.png" alt="" />
         <div class="image-box"></div>
         <div class="image-white-box d-flex justify-content-center align-items-center">
-          <h6>COMMERCIAL</h6>
+          <h6>PROJECT</h6>
         </div>
       </div>
 
@@ -388,7 +352,7 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
         <img class="image1" src="images/service2.png" alt="" />
         <div class="image-box"></div>
         <div class="image-white-box d-flex justify-content-center align-items-center">
-          <h6>COMMERCIAL</h6>
+          <h6>TURNKEY</h6>
         </div>
       </div>
     </div>
@@ -419,10 +383,10 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
       <div class="row">
         <div class="col-md-8 mt-2 mb-4">
           <p>
-            1Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            vulputate libero et velit interdum, ac aliquet odio mattis. Class
-            aptent taciti sociosqu ad litora torquent per conubia nostra, per
-            inceptos himenaeos.
+            Discover our portfolio of outstanding construction projects, showcasing our expertise in residential,
+            commercial,
+            and industrial developments. Each project reflects our commitment to quality, innovation, and client
+            satisfaction.
           </p>
         </div>
       </div>
@@ -547,7 +511,7 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
 
         <div class="col-lg-6">
           <div class="mt-3 common-btn-filled connect-btn d-flex align-items-end justify-content-end">
-            <button type="button" class="submit-btn" data-toggle="modal" data-target="#myModal">
+            <button type="button" class="submit-btn me-md-4" data-toggle="modal" data-target="#myModal">
               <p>Add My Review</p>
               <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
                 <path d="M15 25.5L22.5 18L15 10.5V25.5Z" fill="#FEBC2F" />
@@ -560,7 +524,7 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
               class="testimonial-main-content mt-3 mt-md-0 d-flex align-items-center justify-content-lg-center h-100">
               <div data-aos="fade-left" class="slider-container">
                 <div data-aos="fade-up" class="slider" id="reviewsWrapper">
-                  <div class="slide">
+                  <!-- <div class="slide">
                     <div class="testimonial-main-content">
                       <div class="testimonials-main">
                         <div data-aos="fade-up" class="testimonials-icon mt-4">
@@ -590,7 +554,7 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
                   <!-- Repeat .slide divs for additional testimonials -->
                 </div>
                 <div data-aos="fade-up" class="slider-dots">
@@ -607,7 +571,7 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
   <div class="container-fluid mt-5 pt-3">
     <div class="row py-4">
       <div class="col-md-4 d-none d-md-block">
-        <div data-aos="fade-right" class="connect-img light-glow">
+        <div data-aos="fade-right" class="connect-img">
           <img src="images/contact-img.png" alt="" />
         </div>
       </div>
@@ -654,7 +618,7 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
                     <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
                       <path d="M15 25.5L22.5 18L15 10.5V25.5Z" fill="#FEBC2F" />
                     </svg>
-                    </bu>
+                  </button>
                 </div>
 
                 <div data-aos="fade-right" class="social-link mt-3">
@@ -710,9 +674,6 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
 
   <!-- Footer -->
   <?php include 'footer.php'; ?>
-
-  <!-- jQuery and Bootstrap JS -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
   <script>
 
@@ -997,7 +958,6 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
 
   <script src="index.js"></script>
   <script src="typing.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     // Initialize AOS
