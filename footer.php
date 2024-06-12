@@ -11,7 +11,7 @@
 
                 <div class="col-md-6 connect-now-right">
                 <div class="common-btn-filled slidingVertical-contact">
-                <a href="#" class="animate-text">
+                <a href="./contact.php" class="animate-text">
                 <div class="words">
                   <p >
                     <span>Connect US</span>

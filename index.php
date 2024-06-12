@@ -258,7 +258,7 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
           </div>
 
           <div data-aos="fade-up" class="slidingVertical common-btn-filled mt-5">
-            <a href="#" class="animate-text">
+            <a href="./about.html" class="animate-text">
               <div class="words">
                 <p>
                   <span>About US</span>
