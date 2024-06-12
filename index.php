@@ -14,6 +14,7 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AG Creations</title>
+  <link rel="icon" type="image/x-icon" href="./images/ag-creation.png">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -226,7 +227,7 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
       <div class="col-sm-5 pb-5 pb-sm-0 left-experts zoom-in-effect">
         <div data-aos="fade-left" class="left-ang-img ">
           <span class="left-experts-background">
-            <img class="light-glow" src="images/archi.png" alt="" />
+            <img src="images/archi.png" alt="" />
           </span>
         </div>
       </div>
@@ -317,7 +318,7 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
 
     <div class="row service-grid">
       <div data-aos="fade-right" class="service-container col-sm-6 col-md-4">
-        <img class="image1" src="images/service2.png" alt="" />
+        <img class="image1" src="images/s1.png" alt="" />
         <div class="image-box"></div>
         <div class="image-white-box d-flex justify-content-center align-items-center">
           <h6>RESIDENTIAL</h6>
@@ -325,7 +326,7 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
       </div>
 
       <div data-aos="fade-up" class="service-container col-sm-6 col-md-4">
-        <img class="image1" src="images/service2.png" alt="" />
+        <img class="image1" src="images/s2.png" alt="" />
         <div class="image-box"></div>
         <div class="image-white-box d-flex justify-content-center align-items-center">
           <h6>COMMERCIAL</h6>
@@ -333,7 +334,7 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
       </div>
 
       <div data-aos="fade-left" class="service-container col-sm-6 col-md-4">
-        <img class="image1" src="images/service2.png" alt="" />
+        <img class="image1" src="images/s3.png" alt="" />
         <div class="image-box"></div>
         <div class="image-white-box d-flex justify-content-center align-items-center">
           <h6>SUSTAINABLE</h6>
@@ -341,7 +342,7 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
       </div>
 
       <div data-aos="fade-right" class="service-container col-sm-6 col-md-6">
-        <img class="image1" src="images/service2.png" alt="" />
+        <img class="image1" src="images/s5.png" alt="" />
         <div class="image-box"></div>
         <div class="image-white-box d-flex justify-content-center align-items-center">
           <h6>PROJECT</h6>
@@ -349,7 +350,7 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
       </div>
 
       <div data-aos="fade-left" class="service-container col-md-6">
-        <img class="image1" src="images/service2.png" alt="" />
+        <img class="image1" src="images/s4.png" alt="" />
         <div class="image-box"></div>
         <div class="image-white-box d-flex justify-content-center align-items-center">
           <h6>TURNKEY</h6>
@@ -524,37 +525,6 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
               class="testimonial-main-content mt-3 mt-md-0 d-flex align-items-center justify-content-lg-center h-100">
               <div data-aos="fade-left" class="slider-container">
                 <div data-aos="fade-up" class="slider" id="reviewsWrapper">
-                  <!-- <div class="slide">
-                    <div class="testimonial-main-content">
-                      <div class="testimonials-main">
-                        <div data-aos="fade-up" class="testimonials-icon mt-4">
-                          <svg width="32" height="24" viewBox="0 0 32 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M18.625 23.375V11.75L27.25 0.125H31.75L24.25 11.75H30.25V23.375H18.625ZM0.25 23.375V11.75L8.875 0.125H13.375L5.875 11.75H11.875V23.375H0.25Z"
-                              fill="black" />
-                          </svg>
-                        </div>
-                        <div data-aos="fade-up" class="testimonials-header mt-3">
-                          <h4>Feedback Title</h4>
-                        </div>
-                        <div data-aos="fade-up" class="testimonaials-main-content mt-3">
-                          <p>
-                            Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
-                            interdum, ac aliquet odio mattis.
-                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                          </p>
-                        </div>
-                        <div data-aos="fade-up" class="d-flex testimonials-details align-items-center flex-row my-3">
-                          <img class="testimonials-image" src="./images/mission2.png" alt="">
-                          <div>
-                            <h6>Arun Kishore</h6>
-                            <p class="mt-1">Frontend Developer</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div> -->
                   <!-- Repeat .slide divs for additional testimonials -->
                 </div>
                 <div data-aos="fade-up" class="slider-dots">
@@ -653,17 +623,18 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
           <div data-aos="fade-left" class="contact-detail w-100">
             <div class="detail-item">
               <img src="images/phone.png" alt="" />
-              <p>+1012 3456 789</p>
+              <p>+91 87544 10681</p>
             </div>
 
             <div class="detail-item">
               <img src="images/email.png" alt="" />
-              <p>demo@gmail.com</p>
+              <p>ethiraaj.v@gmail.com</p>
             </div>
             <div class="detail-item">
               <img src="images/location.png" alt="" />
               <p>
-                132 Dartmouth Street Boston, Massachusetts 02156 United States
+              22/25, 4th Street, 
+              Jothi nagar, thiruvottriyur, Chennai-600019
               </p>
             </div>
           </div>
@@ -674,6 +645,9 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
 
   <!-- Footer -->
   <?php include 'footer.php'; ?>
+
+  <!-- jQuery and Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
   <script>
 

@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact</title>
+  <title>AG Creations</title>
+  <link rel="icon" type="image/x-icon" href="./images/ag-creation.png">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -112,7 +113,7 @@
                 <p></p>
               </div>
               <div data-aos="fade-up" class="about-home">
-                <img src="images/home.png" alt="" />
+                <img src="images/contact-land.png" alt="" />
               </div>
             </div>
           </div>
@@ -228,17 +229,18 @@
           <div data-aos="fade-left" class="contact-detail w-100">
             <div class="detail-item">
               <img src="images/phone.png" alt="" />
-              <p>+1012 3456 789</p>
+              <p>+91 87544 10681</p>
             </div>
 
             <div class="detail-item">
               <img src="images/email.png" alt="" />
-              <p>demo@gmail.com</p>
+              <p>ethiraaj.v@gmail.com </p>
             </div>
             <div class="detail-item">
               <img src="images/location.png" alt="" />
               <p>
-                132 Dartmouth Street Boston, Massachusetts 02156 United States
+                22/25, 4th Street,
+                Jothi nagar, thiruvottriyur, Chennai-600019
               </p>
             </div>
           </div>
@@ -250,114 +252,14 @@
   <div data-aos="fade-up" class="container-fluid map">
     <div class="embeded-map">
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62220.443440465766!2d80.07175592350282!3d12.922003471375785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525f14844aad0f%3A0xe16d3a66c4ce38d4!2sTambaram%2C%20Chennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1715623879635!5m2!1sen!2sin"
-        width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d971.1830720384636!2d80.3000381!3d13.1792722!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52710064038143%3A0x6f9dd79a27a709e8!2sAG%20Creations!5e0!3m2!1sen!2sin!4v1718203279758!5m2!1sen!2sin"
+        width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </div>
 
-  <div class="container-fluid container-fluid-max">
-    <div class="row mt-5 footer-img">
-      <img src="images/footer-img.png" alt="" />
-      <div class="container-fluid">
-        <div class="row h-100 py-4">
-          <div data-aos="fade-right" class="col-md-6 footer-heading">
-            <h1>Let’s Connect Now !</h1>
-            <p>Take Initiative Now For Better Choice</p>
-          </div>
-
-          <div class="col-md-6 connect-now-right">
-            <div class="common-btn-filled slidingVertical-contact">
-              <a href="#" class="animate-text">
-                <div class="words">
-                  <p>
-                    <span>Connect US</span>
-                    <span>Today</span>
-
-                  </p>
-                </div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-                  <path d="M15 25.5L22.5 18L15 10.5V25.5Z" fill="#FEBC2F" />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid p-0 m-0 container-fluid-max footer-container">
-    <div class="dot-image">
-      <img src="images/dots.png" alt="" />
-    </div>
-    <div class="container-fluid">
-      <div class="row footer-container-row">
-        <div class="col-lg-6">
-          <div data-aos="fade-right" class="creations">
-            <img src="images/ag-creation.png" alt="" />
-          </div>
-        </div>
-
-        <div class="col-lg-6 creation-common">
-          <div class="creation-secound">
-            <div data-aos="fade-left" class="creations-list">
-              <p>COMPANY</p>
-              <ul>
-                <a href="">
-                  <li>About Us</li>
-                </a>
-                <a href="">
-                  <li>Projects</li>
-                </a>
-                <a href="">
-                  <li>Contact Us</li>
-                </a>
-              </ul>
-            </div>
-
-            <div data-aos="fade-left" class="creations-list">
-              <p>Services</p>
-              <ul>
-                <a href="">
-                  <li>Renovation</li>
-                </a>
-                <a href="">
-                  <li>Building</li>
-                </a>
-                <a href="">
-                  <li>Construction</li>
-                </a>
-                <a href="">
-                  <li>Making</li>
-                </a>
-              </ul>
-            </div>
-
-            <div data-aos="fade-left" class="creations-list">
-              <p>Contact</p>
-              <ul>
-                <li>+91 89268 72938</li>
-                <li>demo@gmail.com</li>
-                <li>
-                  132 Dartmouth Street Boston, Massachusetts 02156 United
-                  States
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="footer-rights rights">
-    <div class="container-fluid">
-      <p class="text-center">
-        Copyright @ 2024 AG Creations by High On Code. All Rights Reserved
-      </p>
-    </div>
-  </div>
+  <!-- Footer -->
+  <?php include 'footer.php'; ?>
 
   <script>
     $(document).ready(function () {

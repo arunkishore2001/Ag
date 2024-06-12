@@ -47,13 +47,13 @@
                     <div data-aos="fade-left" class="creations-list">
                         <p>COMPANY</p>
                         <ul>
-                            <a href="">
+                            <a href="./about.html">
                                 <li>About Us</li>
                             </a>
-                            <a href="">
+                            <a href="./project.php">
                                 <li>Projects</li>
                             </a>
-                            <a href="">
+                            <a href="./contact.php">
                                 <li>Contact Us</li>
                             </a>
                         </ul>
@@ -62,16 +62,16 @@
                     <div data-aos="fade-left" class="creations-list">
                         <p>Services</p>
                         <ul>
-                            <a href="">
+                            <a href="./services.html">
                                 <li>Renovation</li>
                             </a>
-                            <a href="">
+                            <a href="./services.html">
                                 <li>Building</li>
                             </a>
-                            <a href="">
+                            <a href="./services.html">
                                 <li>Construction</li>
                             </a>
-                            <a href="">
+                            <a href="./services.html">
                                 <li>Making</li>
                             </a>
                         </ul>
@@ -80,11 +80,11 @@
                     <div data-aos="fade-left" class="creations-list">
                         <p>Contact</p>
                         <ul>
-                            <li>+91 89268 72938</li>
-                            <li>demo@gmail.com</li>
+                            <li>+91 87544 10681</li>
+                            <li>ethiraaj.v@gmail.com</li>
                             <li>
-                                132 Dartmouth Street Boston, Massachusetts 02156 United
-                                States
+                            22/25, 4th Street,
+                            Jothi nagar, thiruvottriyur, Chennai-600019
                             </li>
                         </ul>
                     </div>
