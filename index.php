@@ -849,6 +849,7 @@ $projectQuery = mysqli_query($conn, "SELECT DISTINCT project_name FROM images");
       let currentIndex = 0;
 
       function createDots() {
+        dotsContainer.innerHTML = '';
         slides.forEach((_, index) => {
           const dot = document.createElement('span');
           dot.classList.add('dot');

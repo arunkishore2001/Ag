@@ -15,25 +15,32 @@ $defaultPicture = "uploads/ag-creation.png";
 if (isset($_FILES["photo"]) && $_FILES["photo"]["error"] == UPLOAD_ERR_OK) {
     $target_dir = "../uploads/";
     $original_path = "uploads/";
-    $target_file = $target_dir . basename($_FILES["photo"]["name"]). "_".time();
-    $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
+    $target_file_name = basename($_FILES["photo"]["name"]);
+    $imageFileType = strtolower(pathinfo($target_file_name, PATHINFO_EXTENSION));
+
+    // Debugging information
+    error_log("File name: $target_file_name");
+    error_log("File type: $imageFileType");
 
     if ($_FILES["photo"]["size"] > 200000) {
         echo "Sorry, your file is too large.";
         exit;
     }
 
-    if ($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "gif") {
+    $allowed_types = array("jpg", "jpeg", "png", "gif");
+    if (!in_array($imageFileType, $allowed_types)) {
         echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
         exit;
     }
+
+    $unique_name = pathinfo($target_file_name, PATHINFO_FILENAME) . "_" . time() . "." . $imageFileType;
+    $target_file = $target_dir . $unique_name;
+    $photoPath = $original_path . $unique_name;
 
     if (!move_uploaded_file($_FILES["photo"]["tmp_name"], $target_file)) {
         echo "Sorry, there was an error uploading your file.";
         exit;
     }
-
-    $photoPath = $original_path . basename($_FILES["photo"]["name"]). "_".time();
 } else {
     // Use default picture if photo is not selected
     $photoPath = $defaultPicture;
